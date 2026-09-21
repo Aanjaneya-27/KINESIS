@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "tertiary": "#4edea3",
+          "on-secondary": "#472a00",
+          "on-primary-fixed": "#00174b",
+          "secondary-fixed": "#ffddb8",
+          "outline-variant": "#434655",
+          "on-tertiary-fixed-variant": "#005236",
+          "outline": "#8d90a0",
+          "tertiary-fixed": "#6ffbbe",
+          "on-primary": "#002a78",
+          "on-surface": "#dfe2ed",
+          "on-primary-container": "#eeefff",
+          "error-container": "#93000a",
+          "tertiary-fixed-dim": "#4edea3",
+          "surface-container-highest": "#31353d",
+          "on-error": "#690005",
+          "surface-bright": "#353941",
+          "primary-fixed": "#dbe1ff",
+          "surface-container": "#1c2027",
+          "on-tertiary": "#003824",
+          "on-secondary-fixed-variant": "#653e00",
+          "on-secondary-fixed": "#2a1700",
+          "primary-fixed-dim": "#b4c5ff",
+          "surface-container-high": "#262a32",
+          "on-secondary-container": "#5b3800",
+          "on-tertiary-container": "#bdffdb",
+          "inverse-primary": "#0053db",
+          "on-primary-fixed-variant": "#003ea8",
+          "inverse-surface": "#dfe2ed",
+          "surface-container-lowest": "#0a0e15",
+          "surface": "#0f131b",
+          "on-surface-variant": "#c3c6d7",
+          "surface-tint": "#b4c5ff",
+          "on-tertiary-fixed": "#002113",
+          "primary": "#b4c5ff",
+          "on-background": "#dfe2ed",
+          "secondary-fixed-dim": "#ffb95f",
+          "tertiary-container": "#007d55",
+          "surface-container-low": "#181c23",
+          "primary-container": "#2563eb",
+          "background": "#0f131b",
+          "surface-dim": "#0f131b",
+          "error": "#ffb4ab",
+          "surface-variant": "#31353d",
+          "inverse-on-surface": "#2d3038",
+          "secondary-container": "#ee9800",
+          "on-error-container": "#ffdad6",
+          "secondary": "#ffb95f"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "margin-desktop": "3rem",
+          "margin": "1rem",
+          "space-xl": "2.5rem",
+          "space-lg": "1.5rem",
+          "space-md": "1rem",
+          "space-xs": "0.25rem",
+          "space-sm": "0.5rem",
+          "gutter": "1.25rem",
+          "gutter-desktop": "2rem"
+        },
+        "fontFamily": {
+          "label-code": [
+            "JetBrains Mono"
+          ],
+          "headline-lg": [
+            "Inter"
+          ],
+          "body-sm": [
+            "Inter"
+          ],
+          "headline-xl": [
+            "Inter"
+          ],
+          "body-md": [
+            "Inter"
+          ],
+          "headline-xl-mobile": [
+            "Inter"
+          ],
+          "display-hero-mobile": [
+            "Inter"
+          ],
+          "label-code-xs": [
+            "JetBrains Mono"
+          ],
+          "body-lg": [
+            "Inter"
+          ],
+          "headline-md": [
+            "Inter"
+          ],
+          "display-hero": [
+            "Inter"
+          ]
+        },
+        "fontSize": {
+          "label-code": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.05em",
+              "fontWeight": "500"
+            }
+          ],
+          "headline-lg": [
+            "28px",
+            {
+              "lineHeight": "36px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "500"
+            }
+          ],
+          "body-sm": [
+            "12px",
+            {
+              "lineHeight": "18px",
+              "letterSpacing": "0em",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-xl": [
+            "40px",
+            {
+              "lineHeight": "48px",
+              "letterSpacing": "-0.025em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-md": [
+            "14px",
+            {
+              "lineHeight": "22px",
+              "letterSpacing": "-0.005em",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-xl-mobile": [
+            "28px",
+            {
+              "lineHeight": "34px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "600"
+            }
+          ],
+          "display-hero-mobile": [
+            "36px",
+            {
+              "lineHeight": "42px",
+              "letterSpacing": "-0.025em",
+              "fontWeight": "600"
+            }
+          ],
+          "label-code-xs": [
+            "10px",
+            {
+              "lineHeight": "14px",
+              "letterSpacing": "0.08em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-lg": [
+            "16px",
+            {
+              "lineHeight": "26px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-md": [
+            "20px",
+            {
+              "lineHeight": "28px",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "500"
+            }
+          ],
+          "display-hero": [
+            "56px",
+            {
+              "lineHeight": "64px",
+              "letterSpacing": "-0.03em",
+              "fontWeight": "600"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container min-h-screen flex flex-col"><header class="fixed top-0 left-0 w-full z-50"><div class="bg-surface-container-lowest text-on-surface-variant text-label-code-xs font-label-code-xs tracking-wider"><div class="w-full px-margin-desktop h-8 flex items-center justify-between"><div class="flex items-center gap-space-sm"><span class="text-tertiary font-label-code-xs text-label-code-xs">● LIVE SPEC</span><span class="text-on-surface">FLASH: FREE WORLDWIDE EXPRESS SHIPPING ON ORDERS OVER $150</span></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs cursor-pointer hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-sm leading-none">public</span><span class="font-label-code-xs text-label-code-xs uppercase">USD / US</span></div><a class="hover:text-on-surface transition-colors font-label-code-xs text-label-code-xs uppercase" data-path="support" href="#">Support</a></div></div></div><div class="bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.25)]"><div class="w-full px-margin-desktop h-16 flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><a class="flex items-center gap-space-sm group" data-path="home" href="code.html"><img alt="Kinesis Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WXGH4d2fTNSJ3gXEvlPKyYSXFXqYDFOw3Ztvw68JRVozGVyAl7kIpl6gZdrEqOstyIfOGwzoT16MYlVNEwj8MJAAJ06sJIudbw6u89nD6McDdUHaLttjiSbO3N4QWe8OaE4ZrXO621aZfp75SvMGFEYf7f9JRFQvna9GjEMVBCu5YMQxnCmrCNCmR2Gu6hY0yeZLWravKLx6ZvRO0lbMX6IZwtjHx1QLy2fPZmveMco16PMdimRCeO-A"/><span class="font-headline-md text-headline-md font-semibold tracking-tight uppercase text-on-surface group-hover:text-primary transition-colors">Kinesis</span></a><span class="hidden lg:inline-block font-label-code-xs text-label-code-xs uppercase text-outline px-space-xs py-0.5 rounded bg-surface-container-high">SYSTEM 01</span></div><nav class="hidden xl:flex items-center gap-space-sm" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded"><a class="px-space-sm py-1 font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="men" href="code.html#categories-section">Men</a><a class="px-space-sm py-1 font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="women" href="code.html#categories-section">Women</a><a class="px-space-sm py-1 font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="techwear" href="code.html#featured-section">Techwear</a><a class="px-space-sm py-1 font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="new-arrivals" href="code.html#featured-section">New Arrivals</a><a class="px-space-sm py-1 font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="archive" href="code.html#bundle-section">Archive</a><a class="px-space-sm py-1 font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors flex items-center gap-1.5" data-path="sale" href="code.html#featured-section">Sale<span class="bg-error-container text-error text-label-code-xs font-label-code-xs px-1.5 py-0.2 rounded-full uppercase">Sale</span></a></nav><div class="flex items-center gap-space-md"><div class="hidden md:flex items-center bg-surface-container-low px-space-sm py-1.5 rounded-lg w-64 focus-within:w-72 transition-all"><span class="material-symbols-outlined text-outline text-base mr-2 leading-none">search</span><input class="bg-transparent text-body-sm font-body-sm text-on-surface placeholder:text-outline focus:outline-none w-full" placeholder="SEARCH SPECS / CODE..." type="text"/><span class="text-label-code-xs font-label-code-xs bg-surface-container text-on-surface-variant px-1.5 py-0.5 rounded">⌘K</span></div><div class="flex items-center gap-space-sm"><a class="relative p-2 rounded-lg bg-surface-container-low text-on-surface-variant hover:text-on-surface transition-colors" data-path="wishlist" href="code.html"><span class="material-symbols-outlined text-lg leading-none">favorite</span><span class="absolute -top-1 -right-1 bg-primary-container text-on-primary-container font-label-code-xs text-label-code-xs w-4 h-4 rounded-full flex items-center justify-center font-bold">3</span></a><button class="flex items-center gap-space-xs bg-surface-container-low hover:bg-surface-container px-space-sm py-1.5 rounded-lg text-on-surface transition-colors" onclick="window.location.href='CheckOut.html'" type="button"><span class="material-symbols-outlined text-lg leading-none">shopping_bag</span><span class="font-label-code-xs text-label-code-xs text-on-surface font-semibold">$384.00</span><span class="bg-primary-container text-on-primary-container text-label-code-xs font-label-code-xs px-1.5 py-0.5 rounded-full font-bold">2</span></button><a class="flex items-center" data-path="account" href="code.html"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2LI6Yto-UxTaER8ZkGlNzudDsrcYcpj4TIN8zBk2tdS6Uvp1fwxu2hyAGslgLlsWgBsq5Haxeaysh1n4H1Va5Ps8l-aYV87gng-TaSCgsyRrnWcj4kwMwUQqSKHRoWMbS68jKmuc3LzwwMN3gp38TMTzfUvlOZ6i0kg5Ht9YMIDfCUwC0NMVyb-F3yn5lhQZp9Mf9tySLDBqfQ6yf0vXcJLzh9yDpey4XSZLISe5NaVCQI_1w0pKS"/></a></div></div></div></div></header><main class="w-full pt-24 bg-surface flex-1"><div class="flex flex-col w-full text-on-surface">
+<!-- Sub-Header & Live Uplink Status Bar -->
+<section class="w-full bg-surface-container-lowest px-margin md:px-margin-desktop py-space-sm">
+<div class="flex flex-col xl:flex-row items-start xl:items-center justify-between gap-space-sm text-label-code-xs font-label-code-xs">
+<div class="flex flex-wrap items-center gap-space-xs text-outline">
+<a href="code.html" class="hover:text-primary transition-colors cursor-pointer flex items-center gap-1 font-semibold text-primary"><span class="material-symbols-outlined text-xs">arrow_back</span>STOREFRONT</a>
+<span>/</span>
+<a href="CheckOut.html" class="hover:text-on-surface transition-colors cursor-pointer">ORDERS</a>
+<span>/</span>
+<span class="text-primary font-bold">KNX-2025-98842</span>
+<span>/</span>
+<span class="text-tertiary">LIVE TELEMETRY STREAM</span>
+</div>
+<div class="flex flex-wrap items-center gap-space-md text-on-surface-variant">
+<div class="flex items-center gap-space-xs bg-surface-container-low px-space-sm py-1 rounded">
+<span class="inline-block w-2 h-2 rounded-full bg-tertiary animate-ping"></span>
+<span class="text-on-surface">SATCOM:</span>
+<span class="text-tertiary font-medium">ORBCOMM-LEO-4 // 99.98% SNR</span>
+</div>
+<div class="hidden sm:flex items-center gap-space-xs bg-surface-container-low px-space-sm py-1 rounded">
+<span class="material-symbols-outlined text-xs text-primary" style="font-variation-settings: 'FILL' 1;">satellite_alt</span>
+<span>GPS FIX: <strong class="text-on-surface">3D LOCK (12 SAT)</strong></span>
+</div>
+<div class="hidden lg:flex items-center gap-space-xs bg-surface-container-low px-space-sm py-1 rounded font-mono">
+<span class="text-outline">HASH:</span>
+<span class="text-on-surface">0x8b32...f901</span>
+</div>
+<div class="flex items-center gap-1.5 bg-surface-container px-space-sm py-1 rounded text-primary">
+<span class="material-symbols-outlined text-xs animate-spin" style="animation-duration: 3s;">sync</span>
+<span id="telemetry-tick">SYNC 1.5s</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Hero Overview & Tactical Status Strip -->
+<section class="w-full px-margin md:px-margin-desktop pt-space-lg pb-space-md">
+<div class="bg-surface-container-low p-space-md md:p-space-lg rounded-xl shadow-xl relative overflow-hidden">
+<!-- Background Ambient Glow -->
+<div class="absolute -right-24 -top-24 w-96 h-96 rounded-full bg-primary/10 blur-3xl pointer-events-none"></div>
+<div class="absolute -left-20 -bottom-20 w-72 h-72 rounded-full bg-tertiary/5 blur-3xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col lg:flex-row lg:items-center justify-between gap-space-lg">
+<div class="space-y-space-xs">
+<div class="flex flex-wrap items-center gap-space-sm">
+<span class="bg-surface-container-highest text-primary font-label-code-xs text-label-code-xs px-2 py-1 rounded uppercase tracking-wider font-semibold">AIR EXPRESS PRIORITY // TIER-1</span>
+<span class="bg-tertiary-container/30 text-tertiary font-label-code-xs text-label-code-xs px-2 py-1 rounded uppercase tracking-wider font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary animate-pulse"></span>
+              EN ROUTE
+            </span>
+<span class="text-outline text-label-code-xs font-label-code-xs">DEST_ID: US-WA-98101</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl tracking-tight text-on-surface pt-1">
+            CARGO IN TRANSIT <span class="text-outline font-normal">//</span> <span class="text-primary-fixed-dim">PHASE 02: STAGED</span>
+</h1>
+<div class="flex flex-col sm:flex-row sm:items-center gap-space-xs sm:gap-space-md text-body-sm font-body-sm text-on-surface-variant pt-1">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-base text-primary">trip_origin</span>
+<span>SEA-09 (Seattle Terminal Hub)</span>
+</div>
+<span class="hidden sm:inline text-outline">→</span>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-base text-tertiary">location_on</span>
+<span class="text-on-surface font-medium">SEA-LABS-402 (Apex Systems Lab, 742 Evergreen Terr)</span>
+</div>
+</div>
+</div>
+<!-- Telemetry ETA Counter Card -->
+<div class="bg-surface-container p-space-md rounded-lg flex flex-col md:flex-row items-start md:items-center gap-space-md shadow-inner">
+<div>
+<div class="text-label-code-xs font-label-code-xs text-outline uppercase tracking-wider">PROJECTED CONCIERGE DROP</div>
+<div class="font-headline-md text-headline-md text-on-surface font-semibold">OCT 28, 2025</div>
+<div class="text-label-code text-label-code text-on-surface-variant">14:00 – 17:30 UTC (DIRECT HANDSHAKE)</div>
+</div>
+<div class="bg-surface-container-lowest px-space-md py-2.5 rounded-lg">
+<div class="text-label-code-xs font-label-code-xs text-primary uppercase font-bold tracking-wider">T-MINUS ESTIMATOR</div>
+<div class="font-label-code text-label-code text-tertiary font-bold tracking-widest text-lg" id="countdown-timer">71H : 23M : 48S</div>
+</div>
+</div>
+</div>
+<!-- Tactical Stream Quick Actions Toolbar -->
+<div class="relative z-10 mt-space-md pt-space-sm flex flex-wrap items-center justify-between gap-space-sm text-body-sm font-body-sm">
+<div class="flex flex-wrap items-center gap-space-xs">
+<a class="flex items-center gap-space-xs bg-primary-container hover:bg-blue-600 text-on-primary-container px-3 py-1.5 rounded text-label-code-xs font-label-code-xs uppercase transition-all font-semibold" href="code.html">
+<span class="material-symbols-outlined text-sm">storefront</span>
+            RETURN TO STOREFRONT
+          </a>
+<button class="flex items-center gap-space-xs bg-surface-container hover:bg-surface-bright text-on-surface px-3 py-1.5 rounded text-label-code-xs font-label-code-xs uppercase transition-all" id="btn-refresh">
+<span class="material-symbols-outlined text-sm text-tertiary">sensors</span>
+            STREAM: ACTIVE
+          </button>
+<button class="flex items-center gap-space-xs bg-surface-container-high hover:bg-surface-bright text-on-surface-variant hover:text-on-surface px-3 py-1.5 rounded text-label-code-xs font-label-code-xs uppercase transition-all">
+<span class="material-symbols-outlined text-sm">download</span>
+            SENSOR TELEMETRY LOG (.CSV)
+          </button>
+<button class="flex items-center gap-space-xs bg-surface-container-high hover:bg-surface-bright text-on-surface-variant hover:text-on-surface px-3 py-1.5 rounded text-label-code-xs font-label-code-xs uppercase transition-all">
+<span class="material-symbols-outlined text-sm">share</span>
+            DISPATCH TOKEN LINK
+          </button>
+</div>
+<div class="text-label-code-xs font-label-code-xs text-outline">
+          PROTOCOL: AES-GCM-256 ENCRYPTED • ZERO-KNOWLEDGE NODE
+        </div>
+</div>
+</div>
+</section>
+<!-- Core Content Grid: Geospatial Vector HUD + Container Health Matrix -->
+<section class="w-full px-margin md:px-margin-desktop py-space-md">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop">
+<!-- Primary Left Column: Radar & Geospatial Vector HUD (7 Cols) -->
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<!-- Interactive Vector Telemetry Canvas / Map Component -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-2xl relative flex flex-col">
+<!-- Radar Header & Tactical Layer Controls -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-base">radar</span>
+<span class="font-label-code text-label-code uppercase tracking-wider text-on-surface font-semibold">GEOSPATIAL VECTOR MAP // SECTOR WA-01</span>
+</div>
+<div class="flex items-center gap-1 bg-surface-container px-1 py-0.5 rounded text-label-code-xs font-label-code-xs">
+<button class="px-2 py-1 bg-primary-container text-on-primary rounded font-semibold">VECTOR</button>
+<button class="px-2 py-1 text-on-surface-variant hover:text-on-surface">THERMAL</button>
+<button class="px-2 py-1 text-on-surface-variant hover:text-on-surface">RELAY</button>
+</div>
+</div>
+<!-- Technical Vector Radar Interface Canvas -->
+<div class="relative w-full h-80 sm:h-96 rounded-lg bg-surface-container-low overflow-hidden flex items-center justify-center">
+<!-- Tactical Grid Pattern Lines -->
+<svg class="absolute inset-0 w-full h-full opacity-20 pointer-events-none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<pattern height="32" id="tactical-grid" patternunits="userSpaceOnUse" width="32">
+<path d="M 32 0 L 0 0 0 32" fill="none" stroke="#8d90a0" stroke-width="0.5"></path>
+</pattern>
+<pattern height="128" id="radar-cross" patternunits="userSpaceOnUse" width="128">
+<circle cx="64" cy="64" fill="none" r="60" stroke="#b4c5ff" stroke-dasharray="2, 4" stroke-width="0.75"></circle>
+<path d="M 64 0 L 64 128 M 0 64 L 128 64" fill="none" stroke="#b4c5ff" stroke-width="0.5"></path>
+</pattern>
+</defs>
+<rect fill="url(#tactical-grid)" height="100%" width="100%"></rect>
+<rect fill="url(#radar-cross)" height="100%" width="100%"></rect>
+</svg>
+<!-- Vector Flight Corridor Paths & Nodes -->
+<svg class="absolute inset-0 w-full h-full pointer-events-none" fill="none" viewbox="0 0 600 380" xmlns="http://www.w3.org/2000/svg">
+<!-- Route Corridor Envelope -->
+<path d="M 90 280 Q 240 180 340 160 T 520 90" stroke="rgba(37,99,235,0.2)" stroke-linecap="round" stroke-width="18"></path>
+<path d="M 90 280 Q 240 180 340 160 T 520 90" stroke="#2563eb" stroke-dasharray="4 4" stroke-width="2"></path>
+<!-- Completed Segment -->
+<path d="M 90 280 Q 240 180 340 160" stroke="#4edea3" stroke-width="3"></path>
+<!-- Radial Scanning Beacon -->
+<circle cx="340" cy="160" opacity="0.4" r="28" stroke="#4edea3" stroke-width="1">
+<animate attributename="r" dur="2.4s" repeatcount="indefinite" values="8;36"></animate>
+<animate attributename="opacity" dur="2.4s" repeatcount="indefinite" values="0.8;0"></animate>
+</circle>
+<circle cx="340" cy="160" fill="#4edea3" r="5"></circle>
+<!-- Waypoint Origin Node -->
+<circle cx="90" cy="280" fill="#181c23" r="6" stroke="#8d90a0" stroke-width="2"></circle>
+<circle cx="90" cy="280" fill="#8d90a0" r="2"></circle>
+<!-- Waypoint Destination Node -->
+<circle cx="520" cy="90" fill="#181c23" r="6" stroke="#ffb95f" stroke-width="2"></circle>
+<circle cx="520" cy="90" fill="#ffb95f" r="2"></circle>
+</svg>
+<!-- HUD Overlay Pins & Labels -->
+<!-- Origin Pin -->
+<div class="absolute left-6 sm:left-14 bottom-14 bg-surface-container/90 backdrop-blur-md px-2 py-1 rounded text-label-code-xs font-label-code-xs text-on-surface-variant pointer-events-none shadow-md">
+<span class="text-outline">WP-01:</span> SEA-HUB-09 [DEPARTED]
+            </div>
+<!-- Current In-Transit Node Indicator Pin -->
+<div class="absolute left-[48%] top-[34%] -translate-x-1/2 -translate-y-full mb-2 bg-surface-container-highest/95 backdrop-blur-md p-2 rounded shadow-2xl pointer-events-none">
+<div class="flex items-center gap-1.5 text-label-code-xs font-label-code-xs font-bold text-tertiary">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>
+                ACTIVE TRANSPORTER #KNX-901
+              </div>
+<div class="text-label-code-xs font-label-code-xs text-on-surface mt-0.5">
+                BOEING FIELD (BFI) APEX CORRIDOR
+              </div>
+</div>
+<!-- Destination Pin -->
+<div class="absolute right-6 sm:right-16 top-12 bg-surface-container/90 backdrop-blur-md px-2 py-1 rounded text-label-code-xs font-label-code-xs text-on-surface pointer-events-none shadow-md">
+<span class="text-secondary">TARGET:</span> LABS-402 (EVERGREEN)
+            </div>
+<!-- Map HUD On-Screen Controls -->
+<div class="absolute bottom-3 right-3 flex flex-col gap-1 z-20">
+<button class="w-7 h-7 bg-surface-container hover:bg-surface-bright rounded flex items-center justify-center text-on-surface text-sm transition-colors shadow">
+<span class="material-symbols-outlined text-sm">add</span>
+</button>
+<button class="w-7 h-7 bg-surface-container hover:bg-surface-bright rounded flex items-center justify-center text-on-surface text-sm transition-colors shadow">
+<span class="material-symbols-outlined text-sm">remove</span>
+</button>
+<button class="w-7 h-7 bg-surface-container hover:bg-surface-bright rounded flex items-center justify-center text-on-surface text-sm transition-colors shadow">
+<span class="material-symbols-outlined text-sm">my_location</span>
+</button>
+</div>
+<!-- Compass / Orientation Indicator -->
+<div class="absolute top-3 right-3 bg-surface-container/80 backdrop-blur-sm px-2 py-1 rounded text-label-code-xs font-label-code-xs text-outline flex items-center gap-1">
+<span class="text-primary font-bold">N</span> 358° AZIMUTH
+            </div>
+</div>
+<!-- Bottom Telemetry Readout Strip -->
+<div class="mt-space-sm pt-space-xs grid grid-cols-2 sm:grid-cols-4 gap-space-xs text-label-code-xs font-label-code-xs bg-surface-container-low p-space-sm rounded-lg">
+<div>
+<div class="text-outline uppercase">LATITUDE</div>
+<div class="text-on-surface font-semibold">47.6062° N</div>
+</div>
+<div>
+<div class="text-outline uppercase">LONGITUDE</div>
+<div class="text-on-surface font-semibold">122.3321° W</div>
+</div>
+<div>
+<div class="text-outline uppercase">ALTITUDE</div>
+<div class="text-tertiary font-semibold">142 M MSL</div>
+</div>
+<div>
+<div class="text-outline uppercase">GROUND SPEED</div>
+<div class="text-primary font-semibold">48.2 KTS (TACTICAL)</div>
+</div>
+</div>
+</div>
+<!-- Cargo Manifest Preview Card -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-lg">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-base">inventory_2</span>
+<h2 class="font-headline-md text-headline-md font-semibold text-on-surface">SECURED ENCLAVE MANIFEST</h2>
+</div>
+<span class="bg-surface-container text-on-surface-variant font-label-code-xs text-label-code-xs px-2 py-0.5 rounded">2 PAYLOAD ITEMS</span>
+</div>
+<div class="space-y-space-sm pt-space-xs">
+<!-- Item 1 -->
+<div class="flex items-center justify-between bg-surface-container p-space-sm rounded-lg">
+<div class="flex items-center gap-space-md">
+<img class="w-14 h-14 rounded bg-surface-container-lowest object-cover" data-alt="Technical matte black weatherproof shell jacket displayed flat against a sterile dark slate background, high precision bonded seams, waterproof zippers, and laser-etched Kinesis logo detail in deep obsidian and cobalt tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-XTHcswR2Zfi-vnkZezzB4CEl13YKGoZ8k8KaLyL257b5HCUKKnYzld3WBT1ol7IBbvNUAjs6D08mQjwr2ia7_Pp25n3KqDvQK1BQSiwzDrEImp_CKEJmYL3xjqNMVj5czj_k0NcXbSE_hdrAHKw47VLjeIJDEZnXJsDLU7zXCLQcIH_7IbGlYHsSFVoUpWM-S7cOKukKI9pKFIkUjftgZwsHV_speNZE725_TU4ToxuCu6si321F"/>
+<div>
+<div class="font-headline-md text-body-lg font-semibold text-on-surface">K-01 Stealth Storm Shell</div>
+<div class="text-label-code-xs font-label-code-xs text-outline">SKU: K01-BLK-LG • GORE-TEX PRO 3L • SIZE: L</div>
+<div class="text-label-code-xs font-label-code-xs text-tertiary mt-0.5">ATMOSPHERIC RE-VERIFIED // SEALED</div>
+</div>
+</div>
+<div class="text-right">
+<div class="font-headline-md text-body-lg font-semibold text-on-surface">$295.00</div>
+<span class="text-label-code-xs font-label-code-xs text-outline">QTY: 01</span>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="flex items-center justify-between bg-surface-container p-space-sm rounded-lg">
+<div class="flex items-center gap-space-md">
+<img class="w-14 h-14 rounded bg-surface-container-lowest object-cover" data-alt="Trio of charcoal dark technical utility socks with ergonomic compression ribbing and reinforced heel weave placed neatly inside an anti-static black foil technical packaging pouch." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHb0LtN6imYffEmfgfefV1skkNr1U7y-2aiXXILnCP76qFvH23FZ1OW5mJA1Vh78plpmdg3Ii-xeDkVo3FseM3X8zljtYjUVdTN0_zhmeDxiETFaefCTNCq3fdzmxAAPlkdnefw9-KEsaHjtgrUBP-r9I-Qs7Mq0SFLGxSQVfbIrNyIw1NmUhmJQ-7NJnL4RvkJfQ_htbvxwjZ7FyiJ6eTv3DKPVXzLxTRJIrOwKYSVogIDF8cnMiO"/>
+<div>
+<div class="font-headline-md text-body-lg font-semibold text-on-surface">Tech Utility Socks (3-Pack)</div>
+<div class="text-label-code-xs font-label-code-xs text-outline">SKU: SOX-TAC-3P • CORDURA COMPOSITE • ONE SIZE</div>
+<div class="text-label-code-xs font-label-code-xs text-outline mt-0.5">COMPRESSION TESTED</div>
+</div>
+</div>
+<div class="text-right">
+<div class="font-headline-md text-body-lg font-semibold text-on-surface">$34.00</div>
+<span class="text-label-code-xs font-label-code-xs text-outline">QTY: 01</span>
+</div>
+</div>
+</div>
+<!-- Manifest Specification Table Grid -->
+<div class="mt-space-md grid grid-cols-2 sm:grid-cols-4 gap-space-xs bg-surface-container p-space-sm rounded-lg text-label-code-xs font-label-code-xs">
+<div>
+<span class="text-outline block">PACKAGE DIMENSIONS</span>
+<span class="text-on-surface font-medium">38 × 28 × 12 CM</span>
+</div>
+<div>
+<span class="text-outline block">MASS CALIBRATION</span>
+<span class="text-on-surface font-medium">1.42 KG NET</span>
+</div>
+<div>
+<span class="text-outline block">PAYMENT CAPTURE</span>
+<span class="text-on-surface font-medium">VISA ENDING 8820</span>
+</div>
+<div>
+<span class="text-outline block">TOTAL VALUATION</span>
+<span class="text-primary font-bold">$351.54 USD PAID</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Primary Right Column: Hardware Health Telemetry & Timeline Pipeline (5 Cols) -->
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<!-- Hardware Sensor Telemetry Box (Zero-Knowledge Enclave) -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-xl">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-tertiary text-base">vital_signs</span>
+<h2 class="font-headline-md text-headline-md font-semibold text-on-surface">ZERO-K CONTAINER TELEMETRY</h2>
+</div>
+<span class="bg-surface-container-high text-tertiary font-label-code-xs text-label-code-xs px-2 py-0.5 rounded font-mono">ENCLAVE: SECURE</span>
+</div>
+<!-- Sensor Matrix Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm pt-space-xs">
+<!-- Internal Temp Metric -->
+<div class="bg-surface-container p-space-sm rounded-lg flex flex-col justify-between">
+<div class="flex items-center justify-between text-label-code-xs font-label-code-xs text-outline">
+<span>CHAMBER TEMP</span>
+<span class="text-tertiary">NORMAL</span>
+</div>
+<div class="my-1.5 flex items-baseline justify-between">
+<span class="text-headline-lg font-headline-lg font-semibold text-on-surface">19.4<span class="text-body-sm font-body-sm text-outline">°C</span></span>
+<!-- Mini Inline Sparkline SVG -->
+<svg class="w-16 h-6 text-tertiary" fill="none" stroke="currentColor" viewbox="0 0 60 20">
+<path d="M 0 14 Q 15 8 30 11 T 60 9" stroke-linecap="round" stroke-width="2"></path>
+</svg>
+</div>
+<div class="text-label-code-xs font-label-code-xs text-outline">TARGET: 18.0°C – 22.0°C</div>
+</div>
+<!-- Hydrostatic Pressure & RH Metric -->
+<div class="bg-surface-container p-space-sm rounded-lg flex flex-col justify-between">
+<div class="flex items-center justify-between text-label-code-xs font-label-code-xs text-outline">
+<span>PRESSURE &amp; RH</span>
+<span class="text-primary font-bold">SEAL VERIFIED</span>
+</div>
+<div class="my-1.5">
+<span class="text-headline-lg font-headline-lg font-semibold text-on-surface">1013.2 <span class="text-body-sm font-body-sm text-outline">hPa</span></span>
+</div>
+<div class="text-label-code-xs font-label-code-xs text-outline">RELATIVE HUMIDITY: 38% RH</div>
+</div>
+<!-- G-Force Shock Sensor -->
+<div class="bg-surface-container p-space-sm rounded-lg flex flex-col justify-between">
+<div class="flex items-center justify-between text-label-code-xs font-label-code-xs text-outline">
+<span>G-FORCE SHOCK</span>
+<span class="text-tertiary">0 IMPACTS</span>
+</div>
+<div class="my-1.5">
+<span class="text-headline-lg font-headline-lg font-semibold text-on-surface">0.04 <span class="text-body-sm font-body-sm text-outline">G</span></span>
+</div>
+<div class="text-label-code-xs font-label-code-xs text-outline">LIMIT THRESHOLD: &lt; 1.50 G</div>
+</div>
+<!-- Optical Tamper Enclave Status -->
+<div class="bg-surface-container p-space-sm rounded-lg flex flex-col justify-between">
+<div class="flex items-center justify-between text-label-code-xs font-label-code-xs text-outline">
+<span>BEACON POWER</span>
+<span class="text-tertiary">98%</span>
+</div>
+<div class="my-1.5 flex items-center gap-space-sm">
+<!-- Battery SVG Progress Gauge -->
+<div class="w-full bg-surface-container-lowest h-2 rounded-full overflow-hidden">
+<div class="bg-tertiary h-full rounded-full" style="width: 98%;"></div>
+</div>
+</div>
+<div class="text-label-code-xs font-label-code-xs text-outline">EST. 14 DAYS RUNTIME REMAINING</div>
+</div>
+</div>
+<!-- Tamper Ribbon Alert Strip -->
+<div class="mt-space-sm bg-surface-container px-space-sm py-2 rounded-lg flex items-center justify-between text-label-code-xs font-label-code-xs">
+<div class="flex items-center gap-space-xs text-tertiary">
+<span class="material-symbols-outlined text-sm">lock</span>
+<span>OPTICAL FIBER HERMETIC SEAL: UNBROKEN</span>
+</div>
+<span class="text-outline">CERT: SEC-FIPS-140-3</span>
+</div>
+</div>
+<!-- Deployment Progression Chronological Pipeline -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-xl flex-1">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-base">alt_route</span>
+<h2 class="font-headline-md text-headline-md font-semibold text-on-surface">DEPLOYMENT PIPELINE</h2>
+</div>
+<span class="text-label-code-xs font-label-code-xs text-outline uppercase font-mono">6 STAGES</span>
+</div>
+<div class="relative pt-space-xs pl-2 space-y-space-md">
+<!-- Stage 1: Done -->
+<div class="relative flex items-start gap-space-md group">
+<div class="w-6 h-6 rounded-full bg-tertiary-container flex items-center justify-center shrink-0 text-on-tertiary mt-0.5 shadow-sm">
+<span class="material-symbols-outlined text-sm font-bold">check</span>
+</div>
+<div class="flex-1 pb-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-code text-label-code font-semibold text-on-surface">01. Cryptographic Settlement &amp; Ledger Commit</span>
+<span class="font-label-code-xs text-label-code-xs text-outline">OCT 24, 14:32 UTC</span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-0.5">Authorization token verified; dynamic manifest immutable record logged to chain.</p>
+</div>
+</div>
+<!-- Stage 2: Done -->
+<div class="relative flex items-start gap-space-md group">
+<div class="w-6 h-6 rounded-full bg-tertiary-container flex items-center justify-center shrink-0 text-on-tertiary mt-0.5 shadow-sm">
+<span class="material-symbols-outlined text-sm font-bold">check</span>
+</div>
+<div class="flex-1 pb-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-code text-label-code font-semibold text-on-surface">02. Vault Cleanroom Atmospheric Inspection</span>
+<span class="font-label-code-xs text-label-code-xs text-outline">OCT 24, 16:15 UTC</span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-0.5">Hermetic seal engaged in Class 100 cleanroom. Optical tamper wire fused.</p>
+</div>
+</div>
+<!-- Stage 3: Current Active Stage -->
+<div class="relative flex items-start gap-space-md group">
+<div class="w-6 h-6 rounded-full bg-primary-container flex items-center justify-center shrink-0 text-on-primary mt-0.5 shadow-[0_0_12px_rgba(37,99,235,0.6)]">
+<span class="material-symbols-outlined text-sm animate-pulse">radio_button_checked</span>
+</div>
+<div class="flex-1 bg-surface-container p-space-sm rounded-lg">
+<div class="flex items-center justify-between">
+<span class="font-label-code text-label-code font-semibold text-primary">03. Sortation &amp; Manifest Barcoding at SEA-09</span>
+<span class="font-label-code-xs text-label-code-xs bg-primary-container/30 text-primary px-1.5 py-0.5 rounded font-bold">CURRENT</span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface mt-1">Palletized for air manifest bay transfer at Seattle Western Hub. Transporter link locked.</p>
+<div class="text-label-code-xs font-label-code-xs text-outline mt-1.5">TIMESTAMP: OCT 24, 17:42 UTC // STAGE GATE PASSED</div>
+</div>
+</div>
+<!-- Stage 4: Scheduled -->
+<div class="relative flex items-start gap-space-md opacity-60">
+<div class="w-6 h-6 rounded-full bg-surface-container-high flex items-center justify-center shrink-0 text-outline mt-0.5">
+<span class="text-label-code-xs font-label-code-xs font-bold">04</span>
+</div>
+<div class="flex-1">
+<div class="flex items-center justify-between">
+<span class="font-label-code text-label-code font-semibold text-on-surface">04. Cargo Handover onto Heavy Transporter KNX-901</span>
+<span class="font-label-code-xs text-label-code-xs text-outline">EST: OCT 25, 08:00 UTC</span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-0.5">Scheduled high-altitude aerial express leg between Puget Sound and Metro Base.</p>
+</div>
+</div>
+<!-- Stage 5: Scheduled -->
+<div class="relative flex items-start gap-space-md opacity-50">
+<div class="w-6 h-6 rounded-full bg-surface-container-high flex items-center justify-center shrink-0 text-outline mt-0.5">
+<span class="text-label-code-xs font-label-code-xs font-bold">05</span>
+</div>
+<div class="flex-1">
+<div class="flex items-center justify-between">
+<span class="font-label-code text-label-code font-semibold text-on-surface">05. Regional Sortation &amp; Armed Courier Dispatch</span>
+<span class="font-label-code-xs text-label-code-xs text-outline">EST: OCT 27, 23:00 UTC</span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-0.5">Direct assigned security escort vehicle loaded at District Depot.</p>
+</div>
+</div>
+<!-- Stage 6: Scheduled -->
+<div class="relative flex items-start gap-space-md opacity-40">
+<div class="w-6 h-6 rounded-full bg-surface-container-high flex items-center justify-center shrink-0 text-outline mt-0.5">
+<span class="text-label-code-xs font-label-code-xs font-bold">06</span>
+</div>
+<div class="flex-1">
+<div class="flex items-center justify-between">
+<span class="font-label-code text-label-code font-semibold text-on-surface">06. Direct Concierge Drop &amp; Cryptographic Handshake</span>
+<span class="font-label-code-xs text-label-code-xs text-outline">EST: OCT 28, 14:00 UTC</span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-0.5">Biometric or one-time NFC key release required upon physical handover.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Dispatch Operations & Concierge Tactical Control Drawer -->
+<section class="w-full px-margin md:px-margin-desktop py-space-md mb-space-lg">
+<div class="bg-surface-container-low rounded-xl p-space-md md:p-space-lg shadow-xl flex flex-col lg:flex-row items-start lg:items-center justify-between gap-space-lg">
+<!-- Dispatcher Profile Info -->
+<div class="flex items-center gap-space-md">
+<img class="w-16 h-16 rounded-lg bg-surface-container-lowest object-cover" data-alt="Tactical logistics officer wearing a matte black high-collar aerodynamic operations uniform inside a high-tech dim glass-lit flight control command room, cinematic edge lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0n7Qc2iQZ13ZHjGAds7SBpgfdambOq5o5P3EzEOdFKt1YRzqbCZ0Y1Fd_JDo0dP5R9I52axShutVBR_s6304p4C4OknfsCgptTmzmHZjPNb15NWArVMRsG-3BV69mXm3c-RBW2mHx8e8v5975if8UQruBBdQqmipDjSEtd0JRZ8r64b8A1gpBK5Jd9aLFMmbGYQv9jwI7HV5cuhooVKuHpVAmENE5_IXlIRvdpx2tQgJ9UF5nNMhB"/>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-md text-headline-md font-semibold text-on-surface">Officer Davis M.</span>
+<span class="bg-primary-container text-on-primary font-label-code-xs text-label-code-xs px-2 py-0.5 rounded font-bold">TACTICAL CONTROLLER</span>
+</div>
+<div class="text-label-code-xs font-label-code-xs text-outline mt-0.5">DISPATCH CALLSIGN: DSP-882 // PACIFIC COMM LINK OPEN</div>
+<div class="text-body-sm font-body-sm text-on-surface-variant mt-1">Directly monitoring environmental seal continuity &amp; flight slot reservation for order #KNX-2025-98842.</div>
+</div>
+</div>
+<!-- Quick Directive Controls -->
+<div class="flex flex-wrap items-center gap-space-xs w-full lg:w-auto">
+<button class="flex-1 sm:flex-initial flex items-center justify-center gap-space-xs bg-surface-container hover:bg-surface-bright text-on-surface px-4 py-2.5 rounded-lg text-label-code-xs font-label-code-xs uppercase font-semibold transition-colors" id="btn-gate-code">
+<span class="material-symbols-outlined text-base text-primary">key</span>
+          ADD GATE / ACCESS CODE
+        </button>
+<button class="flex-1 sm:flex-initial flex items-center justify-center gap-space-xs bg-surface-container hover:bg-surface-bright text-on-surface px-4 py-2.5 rounded-lg text-label-code-xs font-label-code-xs uppercase font-semibold transition-colors" id="btn-hold-hub">
+<span class="material-symbols-outlined text-base text-secondary">warehouse</span>
+          HOLD AT SEA-09 HUB
+        </button>
+<button class="flex-1 sm:flex-initial flex items-center justify-center gap-space-xs bg-primary-container hover:bg-inverse-primary text-on-primary px-4 py-2.5 rounded-lg text-label-code-xs font-label-code-xs uppercase font-bold transition-all shadow-md" id="btn-reroute">
+<span class="material-symbols-outlined text-base">navigation</span>
+          REQUEST REROUTE
+        </button>
+</div>
+</div>
+</section>
+<!-- Interactive Client Behavior Scripts -->
+<script>
+    (function() {
+      // Micro-tick update for real-time telemetry illusion
+      const syncEl = document.getElementById('telemetry-tick');
+      const countdownEl = document.getElementById('countdown-timer');
+      let secondsRemaining = 71 * 3600 + 23 * 60 + 48;
+      
+      setInterval(() => {
+        if (secondsRemaining > 0) {
+          secondsRemaining--;
+          const h = Math.floor(secondsRemaining / 3600);
+          const m = Math.floor((secondsRemaining % 3600) / 60);
+          const s = secondsRemaining % 60;
+          if (countdownEl) {
+            countdownEl.textContent = `${h}H : ${m < 10 ? '0' : ''}${m}M : ${s < 10 ? '0' : ''}${s}S`;
+          }
+        }
+      }, 1000);
+
+      // Pulse Sync Indicator
+      let syncState = true;
+      setInterval(() => {
+        if (syncEl) {
+          syncState = !syncState;
+          syncEl.textContent = syncState ? 'SYNC 1.5s' : 'STREAM: OK';
+        }
+      }, 1500);
+
+      // Interactive Action Feedback
+      const rerouteBtn = document.getElementById('btn-reroute');
+      if (rerouteBtn) {
+        rerouteBtn.addEventListener('click', () => {
+          rerouteBtn.textContent = 'REROUTE PROTOCOL INITIATED';
+          setTimeout(() => {
+            rerouteBtn.innerHTML = '<span class="material-symbols-outlined text-base">navigation</span> REQUEST REROUTE';
+          }, 3000);
+        });
+      }
+
+      const holdBtn = document.getElementById('btn-hold-hub');
+      if (holdBtn) {
+        holdBtn.addEventListener('click', () => {
+          holdBtn.classList.toggle('text-secondary');
+          holdBtn.classList.toggle('text-error');
+          if (holdBtn.classList.contains('text-error')) {
+            holdBtn.innerHTML = '<span class="material-symbols-outlined text-base">pending</span> HOLD QUEUED';
+          } else {
+            holdBtn.innerHTML = '<span class="material-symbols-outlined text-base text-secondary">warehouse</span> HOLD AT SEA-09 HUB';
+          }
+        });
+      }
+
+      const gateBtn = document.getElementById('btn-gate-code');
+      if (gateBtn) {
+        gateBtn.addEventListener('click', () => {
+          const code = prompt('Enter Secure Lab Gate / Concierge Code for SEA-LABS-402:', 'SEC-9921');
+          if (code) {
+            gateBtn.innerHTML = '<span class="material-symbols-outlined text-base text-tertiary">check</span> GATE CODE ATTACHED';
+          }
+        });
+      }
+    })();
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest mt-space-xl"><div class="w-full px-margin-desktop py-margin-desktop"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-gutter-desktop mb-space-xl"><div class="lg:col-span-1"><div class="flex items-center gap-space-sm mb-space-md"><img alt="Kinesis Brand Logo" class="h-6 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WXGH4d2fTNSJ3gXEvlPKyYSXFXqYDFOw3Ztvw68JRVozGVyAl7kIpl6gZdrEqOstyIfOGwzoT16MYlVNEwj8MJAAJ06sJIudbw6u89nD6McDdUHaLttjiSbO3N4QWe8OaE4ZrXO621aZfp75SvMGFEYf7f9JRFQvna9GjEMVBCu5YMQxnCmrCNCmR2Gu6hY0yeZLWravKLx6ZvRO0lbMX6IZwtjHx1QLy2fPZmveMco16PMdimRCeO-A"/><span class="font-headline-md text-headline-md font-semibold tracking-tight uppercase text-on-surface">KINESIS</span></div><p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Precision engineered technical apparel designed for extreme mobility, atmospheric resilience, and high-performance utility.</p><div class="flex items-center gap-space-xs text-label-code-xs font-label-code-xs text-tertiary"><span class="material-symbols-outlined text-sm leading-none">verified</span><span>ISO-9001 CERTIFIED CRAFT</span></div></div><div><h4 class="font-label-code text-label-code uppercase text-on-surface mb-space-md">ENGINEERED CATS</h4><ul class="space-y-space-sm font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-on-surface transition-colors" data-path="men" href="#">Men's Outerwear</a></li><li><a class="hover:text-on-surface transition-colors" data-path="women" href="#">Women's Modules</a></li><li><a class="hover:text-on-surface transition-colors" data-path="techwear" href="#">Ballistic Cargo Systems</a></li><li><a class="hover:text-on-surface transition-colors" data-path="archive" href="#">Hydro-Shield Shells</a></li><li><a class="hover:text-on-surface transition-colors" data-path="techwear" href="#">Modular Modular Loadouts</a></li></ul></div><div><h4 class="font-label-code text-label-code uppercase text-on-surface mb-space-md">CLIENT OPS</h4><ul class="space-y-space-sm font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-on-surface transition-colors" data-path="order-tracking" href="#">Tactical Order Tracking</a></li><li><a class="hover:text-on-surface transition-colors" data-path="support" href="#">Repairs &amp; Atmospheric Warranty</a></li><li><a class="hover:text-on-surface transition-colors" data-path="support" href="#">Global Transit Matrix</a></li><li><a class="hover:text-on-surface transition-colors" data-path="support" href="#">Returns &amp; Recalibration</a></li><li><a class="hover:text-on-surface transition-colors" data-path="support" href="#">Field Support Desk</a></li></ul></div><div><h4 class="font-label-code text-label-code uppercase text-on-surface mb-space-md">SPECIFICATIONS</h4><ul class="space-y-space-sm font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-on-surface transition-colors" data-path="material-index" href="#">Gore-Tex Pro Lab Specs</a></li><li><a class="hover:text-on-surface transition-colors" data-path="material-index" href="#">Dyneema Composite Fabrics</a></li><li><a class="hover:text-on-surface transition-colors" data-path="sustainability-protocol" href="#">Atmospheric Testing Protocol</a></li><li><a class="hover:text-on-surface transition-colors" data-path="sustainability-protocol" href="#">Circularity &amp; Reclamation</a></li><li><a class="hover:text-on-surface transition-colors" data-path="archive" href="#">Field R&amp;D Archive</a></li></ul></div><div class="lg:col-span-1"><h4 class="font-label-code text-label-code uppercase text-on-surface mb-space-sm">TRANSMISSION FEED</h4><p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">Receive technical drop notices and encrypted prototype releases.</p><form class="flex flex-col gap-space-xs" onsubmit="event.preventDefault();"><div class="flex bg-surface-container-low rounded-lg p-1"><input class="bg-transparent px-space-sm py-1.5 text-body-sm font-body-sm text-on-surface placeholder:text-outline focus:outline-none w-full" placeholder="NODE@CLIENT.COM" type="email"/><button class="bg-primary-container text-on-primary-container px-space-sm py-1.5 rounded text-label-code-xs font-label-code-xs uppercase font-bold hover:bg-primary-fixed-dim transition-colors" type="submit">ENGAGE</button></div><span class="text-label-code-xs font-label-code-xs text-outline">ZERO SPAM. STRICT DATA ENCRYPTION.</span></form></div></div><div class="pt-space-md flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex flex-wrap items-center gap-space-md text-label-code-xs font-label-code-xs text-outline"><span>© 2025 KINESIS CORP. ALL RIGHTS RESERVED.</span><a class="hover:text-on-surface transition-colors" data-path="privacy-policy" href="#">PRIVACY PROTOCOL</a><a class="hover:text-on-surface transition-colors" data-path="terms-of-service" href="#">TERMS OF DEPLOYMENT</a><a class="hover:text-on-surface transition-colors" data-path="support" href="#">SECURITY</a></div><div class="flex items-center gap-space-sm text-label-code-xs font-label-code-xs text-on-surface-variant"><span class="px-2 py-1 bg-surface-container-low rounded uppercase">APPLE PAY</span><span class="px-2 py-1 bg-surface-container-low rounded uppercase">VISA</span><span class="px-2 py-1 bg-surface-container-low rounded uppercase">MASTERCARD</span><span class="px-2 py-1 bg-surface-container-low rounded uppercase">AMEX</span><span class="px-2 py-1 bg-surface-container-low rounded uppercase">STRIPE</span></div></div></div></footer></body></html>

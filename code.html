@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "tertiary": "#4edea3",
+          "on-secondary": "#472a00",
+          "on-primary-fixed": "#00174b",
+          "secondary-fixed": "#ffddb8",
+          "outline-variant": "#434655",
+          "on-tertiary-fixed-variant": "#005236",
+          "outline": "#8d90a0",
+          "tertiary-fixed": "#6ffbbe",
+          "on-primary": "#002a78",
+          "on-surface": "#dfe2ed",
+          "on-primary-container": "#eeefff",
+          "error-container": "#93000a",
+          "tertiary-fixed-dim": "#4edea3",
+          "surface-container-highest": "#31353d",
+          "on-error": "#690005",
+          "surface-bright": "#353941",
+          "primary-fixed": "#dbe1ff",
+          "surface-container": "#1c2027",
+          "on-tertiary": "#003824",
+          "on-secondary-fixed-variant": "#653e00",
+          "on-secondary-fixed": "#2a1700",
+          "primary-fixed-dim": "#b4c5ff",
+          "surface-container-high": "#262a32",
+          "on-secondary-container": "#5b3800",
+          "on-tertiary-container": "#bdffdb",
+          "inverse-primary": "#0053db",
+          "on-primary-fixed-variant": "#003ea8",
+          "inverse-surface": "#dfe2ed",
+          "surface-container-lowest": "#0a0e15",
+          "surface": "#0f131b",
+          "on-surface-variant": "#c3c6d7",
+          "surface-tint": "#b4c5ff",
+          "on-tertiary-fixed": "#002113",
+          "primary": "#b4c5ff",
+          "on-background": "#dfe2ed",
+          "secondary-fixed-dim": "#ffb95f",
+          "tertiary-container": "#007d55",
+          "surface-container-low": "#181c23",
+          "primary-container": "#2563eb",
+          "background": "#0f131b",
+          "surface-dim": "#0f131b",
+          "error": "#ffb4ab",
+          "surface-variant": "#31353d",
+          "inverse-on-surface": "#2d3038",
+          "secondary-container": "#ee9800",
+          "on-error-container": "#ffdad6",
+          "secondary": "#ffb95f"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "margin-desktop": "3rem",
+          "margin": "1rem",
+          "space-xl": "2.5rem",
+          "space-lg": "1.5rem",
+          "space-md": "1rem",
+          "space-xs": "0.25rem",
+          "space-sm": "0.5rem",
+          "gutter": "1.25rem",
+          "gutter-desktop": "2rem"
+        },
+        "fontFamily": {
+          "label-code": [
+            "JetBrains Mono"
+          ],
+          "headline-lg": [
+            "Inter"
+          ],
+          "body-sm": [
+            "Inter"
+          ],
+          "headline-xl": [
+            "Inter"
+          ],
+          "body-md": [
+            "Inter"
+          ],
+          "headline-xl-mobile": [
+            "Inter"
+          ],
+          "display-hero-mobile": [
+            "Inter"
+          ],
+          "label-code-xs": [
+            "JetBrains Mono"
+          ],
+          "body-lg": [
+            "Inter"
+          ],
+          "headline-md": [
+            "Inter"
+          ],
+          "display-hero": [
+            "Inter"
+          ]
+        },
+        "fontSize": {
+          "label-code": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.05em",
+              "fontWeight": "500"
+            }
+          ],
+          "headline-lg": [
+            "28px",
+            {
+              "lineHeight": "36px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "500"
+            }
+          ],
+          "body-sm": [
+            "12px",
+            {
+              "lineHeight": "18px",
+              "letterSpacing": "0em",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-xl": [
+            "40px",
+            {
+              "lineHeight": "48px",
+              "letterSpacing": "-0.025em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-md": [
+            "14px",
+            {
+              "lineHeight": "22px",
+              "letterSpacing": "-0.005em",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-xl-mobile": [
+            "28px",
+            {
+              "lineHeight": "34px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "600"
+            }
+          ],
+          "display-hero-mobile": [
+            "36px",
+            {
+              "lineHeight": "42px",
+              "letterSpacing": "-0.025em",
+              "fontWeight": "600"
+            }
+          ],
+          "label-code-xs": [
+            "10px",
+            {
+              "lineHeight": "14px",
+              "letterSpacing": "0.08em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-lg": [
+            "16px",
+            {
+              "lineHeight": "26px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-md": [
+            "20px",
+            {
+              "lineHeight": "28px",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "500"
+            }
+          ],
+          "display-hero": [
+            "56px",
+            {
+              "lineHeight": "64px",
+              "letterSpacing": "-0.03em",
+              "fontWeight": "600"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container min-h-screen flex flex-col"><header class="fixed top-0 left-0 w-full z-50"><div class="bg-surface-container-lowest text-on-surface-variant text-label-code-xs font-label-code-xs tracking-wider"><div class="w-full px-margin-desktop h-8 flex items-center justify-between"><div class="flex items-center gap-space-sm"><span class="text-tertiary font-label-code-xs text-label-code-xs">● LIVE SPEC</span><span class="text-on-surface">FLASH: FREE WORLDWIDE EXPRESS SHIPPING ON ORDERS OVER $150</span></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs cursor-pointer hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-sm leading-none">public</span><span class="font-label-code-xs text-label-code-xs uppercase">USD / US</span></div><a class="hover:text-on-surface transition-colors font-label-code-xs text-label-code-xs uppercase" data-path="support" href="#">Support</a></div></div></div><div class="bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.25)]"><div class="w-full px-margin-desktop h-16 flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><a class="flex items-center gap-space-sm group" data-path="home" href="#"><img alt="Kinesis Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WXGH4d2fTNSJ3gXEvlPKyYSXFXqYDFOw3Ztvw68JRVozGVyAl7kIpl6gZdrEqOstyIfOGwzoT16MYlVNEwj8MJAAJ06sJIudbw6u89nD6McDdUHaLttjiSbO3N4QWe8OaE4ZrXO621aZfp75SvMGFEYf7f9JRFQvna9GjEMVBCu5YMQxnCmrCNCmR2Gu6hY0yeZLWravKLx6ZvRO0lbMX6IZwtjHx1QLy2fPZmveMco16PMdimRCeO-A"/><span class="font-headline-md text-headline-md font-semibold tracking-tight uppercase text-on-surface group-hover:text-primary transition-colors">Kinesis</span></a><span class="hidden lg:inline-block font-label-code-xs text-label-code-xs uppercase text-outline px-space-xs py-0.5 rounded bg-surface-container-high">SYSTEM 01</span></div><nav class="hidden xl:flex items-center gap-space-sm" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded"><a class="px-space-sm py-1 font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="men" href="#">Men</a><a class="px-space-sm py-1 font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="women" href="#">Women</a><a class="px-space-sm py-1 font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="techwear" href="#">Techwear</a><a class="px-space-sm py-1 font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="new-arrivals" href="#">New Arrivals</a><a class="px-space-sm py-1 font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="archive" href="#">Archive</a><a class="px-space-sm py-1 font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors flex items-center gap-1.5" data-path="sale" href="#">Sale<span class="bg-error-container text-error text-label-code-xs font-label-code-xs px-1.5 py-0.2 rounded-full uppercase">Sale</span></a></nav><div class="flex items-center gap-space-md"><div class="hidden md:flex items-center bg-surface-container-low px-space-sm py-1.5 rounded-lg w-64 focus-within:w-72 transition-all"><span class="material-symbols-outlined text-outline text-base mr-2 leading-none">search</span><input class="bg-transparent text-body-sm font-body-sm text-on-surface placeholder:text-outline focus:outline-none w-full" placeholder="SEARCH SPECS / CODE..." type="text"/><span class="text-label-code-xs font-label-code-xs bg-surface-container text-on-surface-variant px-1.5 py-0.5 rounded">⌘K</span></div><div class="flex items-center gap-space-sm"><a class="relative p-2 rounded-lg bg-surface-container-low text-on-surface-variant hover:text-on-surface transition-colors" data-path="wishlist" href="#"><span class="material-symbols-outlined text-lg leading-none">favorite</span><span class="absolute -top-1 -right-1 bg-primary-container text-on-primary-container font-label-code-xs text-label-code-xs w-4 h-4 rounded-full flex items-center justify-center font-bold">3</span></a><button class="flex items-center gap-space-xs bg-surface-container-low hover:bg-surface-container px-space-sm py-1.5 rounded-lg text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-lg leading-none">shopping_bag</span><span class="font-label-code-xs text-label-code-xs text-on-surface font-semibold">$384.00</span><span class="bg-primary-container text-on-primary-container text-label-code-xs font-label-code-xs px-1.5 py-0.5 rounded-full font-bold">2</span></button><a class="flex items-center" data-path="account" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2LI6Yto-UxTaER8ZkGlNzudDsrcYcpj4TIN8zBk2tdS6Uvp1fwxu2hyAGslgLlsWgBsq5Haxeaysh1n4H1Va5Ps8l-aYV87gng-TaSCgsyRrnWcj4kwMwUQqSKHRoWMbS68jKmuc3LzwwMN3gp38TMTzfUvlOZ6i0kg5Ht9YMIDfCUwC0NMVyb-F3yn5lhQZp9Mf9tySLDBqfQ6yf0vXcJLzh9yDpey4XSZLISe5NaVCQI_1w0pKS"/></a></div></div></div></div></header><main class="w-full pt-24 bg-surface flex-1"><div class="flex flex-col w-full overflow-x-hidden">
+<!-- Top Ticker / Urgent Live Broadcast Ribbon -->
+<div class="w-full bg-surface-container-lowest py-2 px-margin-desktop">
+<div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="inline-block w-2 h-2 rounded-full bg-tertiary animate-ping"></span>
+<span class="font-label-code text-label-code text-on-surface">SYSTEM RELEASE 04.2 LIVE NOW</span>
+<span class="hidden sm:inline text-outline">•</span>
+<span class="hidden sm:inline font-body-sm text-body-sm text-on-surface-variant">Proprietary Storm-Weave membrane batch released for atmospheric utility</span>
+</div>
+<div class="flex items-center gap-space-md font-label-code-xs text-label-code-xs">
+<span class="text-secondary bg-surface-container-high px-2 py-0.5 rounded">94% ALLOCATED</span>
+<span class="text-outline">NEXT DROP: 36H 12M</span>
+</div>
+</div>
+</div>
+<!-- SECTION 1: Asymmetrical Split Hero Showcase -->
+<section class="w-full px-margin-desktop py-space-xl relative">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-center">
+<!-- Left Narrative Engine Column (7 cols) -->
+<div class="lg:col-span-7 flex flex-col space-y-space-md z-10">
+<div class="flex items-center gap-space-sm">
+<span class="bg-surface-container-high text-primary font-label-code text-label-code px-space-sm py-1 rounded">
+            SYSTEM 04 / WINTER COLLECTION
+          </span>
+<span class="font-label-code-xs text-label-code-xs text-tertiary flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">verified_user</span> LAB CERTIFIED 20K
+          </span>
+</div>
+<h1 class="font-display-hero text-display-hero text-on-surface tracking-tight uppercase leading-none">
+          ENGINEERED FOR <br class="hidden sm:inline"/>
+<span class="text-primary-container bg-clip-text text-transparent bg-gradient-to-r from-primary to-tertiary">EVERYDAY UTILITY.</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl leading-relaxed">
+          Modular, weatherproof outerwear and technical performance essentials crafted with proprietary storm-weave nylon and seam-sealed precision. Designed to adapt seamlessly across extreme cold and urban transit.
+        </p>
+<!-- CTA Cluster -->
+<div class="flex flex-wrap items-center gap-space-sm pt-space-xs">
+<button class="bg-primary-container hover:bg-primary-fixed-dim text-on-primary-container font-headline-md text-headline-md px-space-lg py-3 rounded font-semibold transition-all duration-150 transform active:scale-95 flex items-center gap-2 shadow-lg shadow-primary-container/20" onclick="openCartDrawer()" type="button">
+<span>Shop New Drops</span>
+<span class="material-symbols-outlined text-xl">arrow_forward</span>
+</button>
+<a class="bg-surface-container hover:bg-surface-container-high text-on-surface font-headline-md text-headline-md px-space-lg py-3 rounded transition-colors flex items-center gap-2" href="#categories-section">
+<span>Explore Categories</span>
+<span class="material-symbols-outlined text-lg text-outline">tune</span>
+</a>
+</div>
+<!-- Metric Tickers & Social Proof Strip -->
+<div class="pt-space-md grid grid-cols-1 sm:grid-cols-2 gap-space-sm max-w-lg">
+<div class="bg-surface-container-low p-space-sm rounded-lg flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-2xl">star</span>
+<div>
+<div class="font-label-code text-label-code text-on-surface font-bold">4.9 / 5.0 RATING</div>
+<div class="font-body-sm text-body-sm text-outline">3,420+ verified owners</div>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-lg flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-tertiary text-2xl">bolt</span>
+<div>
+<div class="font-label-code text-label-code text-on-surface font-bold">RAPID DISPATCH</div>
+<div class="font-body-sm text-body-sm text-outline">Same-day courier window</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Visual Canvas Column (5 cols) -->
+<div class="lg:col-span-5 relative">
+<div class="relative rounded-xl overflow-hidden bg-surface-container-low aspect-[4/5] shadow-2xl group">
+<img class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out" data-alt="Editorial close up of athletic cyber model wearing ultra-matte black technical storm jacket with waterproof taped seams in dark foggy rain-drenched urban Tokyo alley at night with subtle neon reflection, high contrast studio lighting, 8k hyper-detailed." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4oHOWer8sVEhUd1-X0SXehkEWruFyHQr5wYhWu8ZdgbBTlwk2MwLK9Dd5VRDhL9LqUt7lw4p-me2PweIBpKlJOJqI9BuIPr6BOXspJ4uVLnrdI8igGHD2nRU6uMGSdr_Ezhb9uDTnlWtyp_RnY6lyQK7Zm8CapzUlW0S8MorsDSZg4h4I9B-UTgTkh1DbgH-28YbruHulJ6-EjDglHk3x9z9lZdCYE4bXLlXh2QVYEGo3qn5AATk_"/>
+<!-- Ambient Overlay Gradients -->
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent opacity-80"></div>
+<!-- Interactive Hotspot 1: Storm Shell Jacket -->
+<div class="absolute top-[28%] left-[45%] z-20 group/pin">
+<button class="relative flex items-center justify-center w-8 h-8 rounded-full bg-primary-container text-on-primary-container hover:scale-110 transition-transform">
+<span class="w-3 h-3 rounded-full bg-surface animate-ping absolute"></span>
+<span class="material-symbols-outlined text-base">add</span>
+</button>
+<div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-3 hidden group-hover/pin:flex flex-col bg-surface-container-highest p-space-sm rounded-lg shadow-xl w-52 pointer-events-auto">
+<span class="font-label-code-xs text-label-code-xs text-primary uppercase">OUTERWEAR MODULE</span>
+<span class="font-headline-md text-headline-md text-on-surface font-bold">Acro-Shield Shell</span>
+<span class="font-label-code text-label-code text-tertiary">$280.00</span>
+<button class="mt-2 text-center bg-primary text-on-primary font-label-code-xs text-label-code-xs py-1 rounded hover:bg-primary-container transition-colors uppercase" onclick="openCartDrawer()">Quick View</button>
+</div>
+</div>
+<!-- Interactive Hotspot 2: Modular Cargo Pants -->
+<div class="absolute top-[68%] left-[55%] z-20 group/pin2">
+<button class="relative flex items-center justify-center w-8 h-8 rounded-full bg-surface-bright text-on-surface hover:scale-110 transition-transform">
+<span class="w-3 h-3 rounded-full bg-tertiary animate-ping absolute"></span>
+<span class="material-symbols-outlined text-base">add</span>
+</button>
+<div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-3 hidden group-hover/pin2:flex flex-col bg-surface-container-highest p-space-sm rounded-lg shadow-xl w-52 pointer-events-auto">
+<span class="font-label-code-xs text-label-code-xs text-secondary uppercase">CARGO SYSTEM</span>
+<span class="font-headline-md text-headline-md text-on-surface font-bold">Modular Cargo Pants</span>
+<span class="font-label-code text-label-code text-tertiary">$165.00</span>
+<button class="mt-2 text-center bg-primary text-on-primary font-label-code-xs text-label-code-xs py-1 rounded hover:bg-primary-container transition-colors uppercase" onclick="openCartDrawer()">Quick View</button>
+</div>
+</div>
+<!-- Floating Spec Pill Card -->
+<div class="absolute bottom-4 left-4 right-4 bg-surface/90 backdrop-blur-md p-space-sm rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-2.5 h-2.5 rounded-full bg-tertiary"></div>
+<div>
+<p class="font-label-code text-label-code text-on-surface font-bold uppercase">WEATHERPROOF 20,000MM</p>
+<p class="font-label-code-xs text-label-code-xs text-outline">DWR Breathable Membrane • Taped Seams</p>
+</div>
+</div>
+<span class="font-label-code-xs text-label-code-xs bg-surface-container-high text-on-surface-variant px-2 py-1 rounded">SPEC 04</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: Category Filter Pills & 4-Column Visual Category Grid -->
+<section class="w-full px-margin-desktop py-space-xl bg-surface-container-lowest" id="categories-section">
+<div class="max-w-7xl mx-auto space-y-space-lg">
+<!-- Top Section Header & Filter Pills Strip -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div>
+<span class="font-label-code-xs text-label-code-xs uppercase text-primary tracking-widest block mb-1">TACTICAL DIRECTORY</span>
+<h2 class="font-headline-xl text-headline-xl text-on-surface uppercase">ENGINEERED CATEGORIES</h2>
+</div>
+<!-- Filter Pills Scrollable -->
+<div class="flex items-center gap-space-xs overflow-x-auto pb-2 scrollbar-none">
+<button class="bg-primary-container text-on-primary-container font-label-code text-label-code px-space-md py-1.5 rounded-full uppercase shrink-0 transition-colors">
+            All Categories
+          </button>
+<button class="bg-surface-container-low hover:bg-surface-container text-on-surface-variant font-label-code text-label-code px-space-md py-1.5 rounded-full uppercase shrink-0 transition-colors">
+            Outerwear
+          </button>
+<button class="bg-surface-container-low hover:bg-surface-container text-on-surface-variant font-label-code text-label-code px-space-md py-1.5 rounded-full uppercase shrink-0 transition-colors">
+            Modular Pants
+          </button>
+<button class="bg-surface-container-low hover:bg-surface-container text-on-surface-variant font-label-code text-label-code px-space-md py-1.5 rounded-full uppercase shrink-0 transition-colors">
+            Thermal Layers
+          </button>
+<button class="bg-surface-container-low hover:bg-surface-container text-on-surface-variant font-label-code text-label-code px-space-md py-1.5 rounded-full uppercase shrink-0 transition-colors">
+            Everyday Packs
+          </button>
+<button class="bg-surface-container-low hover:bg-surface-container text-on-surface-variant font-label-code text-label-code px-space-md py-1.5 rounded-full uppercase shrink-0 transition-colors">
+            Accessories
+          </button>
+</div>
+</div>
+<!-- 4-Column Visual Tile Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Category Tile 1 -->
+<a class="group relative rounded-xl overflow-hidden aspect-[3/4] bg-surface-container-high flex flex-col justify-end p-space-md transition-all duration-300" href="#">
+<img class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500 ease-out" data-alt="Monochromatic technical apparel photo of an extreme cold weather hooded shell jacket hanging on industrial steel rig, high contrast textured dark nylon fabric, minimalist studio, obsidian black colorway." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzwSYUWJZ_XpyvTOnNXYRZMMRPdbYWP5LFM8DNF6sNLVp-DOz1V5KYQQoXC4zbsSnmiHNtTo9RNvZjezt7oqsKAxHiiUr3ikwDNo6ofwqNt4OYWJHKuXVSVpopX-6zxSRGfRu5W9oFwrh54r0kP-COvoXWWnblCVJmoiykCs60m5ub84E3zFE1pEnMGa1D9HxRQ5XFSEGn60jGi8Y418Hmn1HTMbiIx7dOpEkf_UyKb2etyI7C70q2"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/40 to-transparent"></div>
+<div class="relative z-10 flex flex-col">
+<span class="font-label-code-xs text-label-code-xs text-primary uppercase">CAT // 01</span>
+<h3 class="font-headline-lg text-headline-lg text-on-surface font-semibold uppercase group-hover:text-primary transition-colors">Technical Shells</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">24 Active Modules</p>
+</div>
+</a>
+<!-- Category Tile 2 -->
+<a class="group relative rounded-xl overflow-hidden aspect-[3/4] bg-surface-container-high flex flex-col justify-end p-space-md transition-all duration-300" href="#">
+<img class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500 ease-out" data-alt="Editorial product photo of dark techwear cargo trousers with waterproof zippered gussets and magnetic utility buckles arranged on matte slate concrete surface, high angle lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxPXvgRT3NVZLj-rhNsTFtK13P0aRve4DlRBjgQcnl3DTtBcXKxrpUANO55pkKJ8vaAIa-xIz7iWSFTmd_y6FYvLPO_ZwLZ57HG3c-j9Xd5BTclvC7Lgz8oAVY58YUjrCFkQff-pONOPflHQhOwn3Lh-Zll7XhqnI_Qr6gMPYrbo_bATKrjjwerMmjeMhpJN7O2kko4DTyDLvWCWskb_37CTYpQXcgjRKO9VzapC6vgLj_dY-_hQWa"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/40 to-transparent"></div>
+<div class="relative z-10 flex flex-col">
+<span class="font-label-code-xs text-label-code-xs text-secondary uppercase">CAT // 02</span>
+<h3 class="font-headline-lg text-headline-lg text-on-surface font-semibold uppercase group-hover:text-secondary transition-colors">Engineered Bottoms</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">18 Active Modules</p>
+</div>
+</a>
+<!-- Category Tile 3 -->
+<a class="group relative rounded-xl overflow-hidden aspect-[3/4] bg-surface-container-high flex flex-col justify-end p-space-md transition-all duration-300" href="#">
+<img class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500 ease-out" data-alt="Modern high performance waterproof commuter backpack in matte charcoal cordura nylon with magnetic fidlock buckles and reflective strips resting on modern steel grid in clean technical studio." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPsUz2UGqDSsGxd7JgTgBzsGHM8Tbc3sU7B0zur7Sm6XA4YTuKmUdQ4rhezwtdzGzkLJKnyrXEuNq-tTyPwWpSbMYRJnqOL2HTpCHJEY3QfeJYD8c_xHNyQJaSajxfAyTeP4IAtm7TCy5adR6-6ggLS_4HF_MorPajSlmZoW9xIFK-XEkiqcK35-7A14hDn3Z867ljKqjeMYM4jSv7q2Lm4dOR3T1NlNpgG-lELNsnHN1cOnv40xcw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/40 to-transparent"></div>
+<div class="relative z-10 flex flex-col">
+<span class="font-label-code-xs text-label-code-xs text-tertiary uppercase">CAT // 03</span>
+<h3 class="font-headline-lg text-headline-lg text-on-surface font-semibold uppercase group-hover:text-tertiary transition-colors">Next-Gen Packs</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">12 Active Modules</p>
+</div>
+</a>
+<!-- Category Tile 4 -->
+<a class="group relative rounded-xl overflow-hidden aspect-[3/4] bg-surface-container-high flex flex-col justify-end p-space-md transition-all duration-300" href="#">
+<img class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500 ease-out" data-alt="Close up of a thermal grid waffle fleece technical pullover garment with tactical collar and laser cut thumb loops, moody lighting, obsidian grey fabric texture." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAaT_OdDD2Vp1qK78Iwed5uj9zR4Q7P4JW4abbuJvBPDPJ1dY-efx_giSzojpNx9K6nDztUXDobKgL4GhqDhSRwXPimPrvq0jl7DxYd4vMjCuskIUJg9Hvs6GqLnto7Sn0kc0zaIaqdDw4JwJ5z1idSUjRNDxYtDhS8FQ5eXzGsmQJrTYA2EEiaaQqL6T2qdpojCzubik02ppANITjFEc2DUMr8NZTlCRvgZo8VoD31vQrcuq_6iZ5v"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/40 to-transparent"></div>
+<div class="relative z-10 flex flex-col">
+<span class="font-label-code-xs text-label-code-xs text-primary-fixed uppercase">CAT // 04</span>
+<h3 class="font-headline-lg text-headline-lg text-on-surface font-semibold uppercase group-hover:text-primary-fixed transition-colors">Thermal Midlayers</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">15 Active Modules</p>
+</div>
+</a>
+</div>
+</div>
+</section>
+<!-- SECTION 3: Featured Products Grid (High-Conversion 4-Column Showcase) -->
+<section class="w-full px-margin-desktop py-space-xl">
+<div class="max-w-7xl mx-auto space-y-space-lg">
+<!-- Section Title & Counter -->
+<div class="flex flex-col sm:flex-row sm:items-end justify-between gap-space-sm">
+<div>
+<div class="flex items-center gap-space-xs text-label-code-xs font-label-code-xs text-primary uppercase">
+<span>● DEPLOYMENT READY</span>
+<span>//</span>
+<span>SYSTEM 04 SELECTION</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl text-on-surface uppercase">FEATURED LOADOUTS</h2>
+</div>
+<div class="flex items-center gap-space-sm text-label-code text-label-code text-on-surface-variant">
+<span>SORT: HIGH DEMAND</span>
+<span class="material-symbols-outlined text-sm">keyboard_arrow_down</span>
+</div>
+</div>
+<!-- 4 High-Conversion Product Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- CARD 1: K-01 Stealth Storm Shell -->
+<div class="bg-surface-container-low rounded-xl overflow-hidden flex flex-col group transition-all duration-300 hover:bg-surface-container shadow-md">
+<!-- Card Image & Interactive Badges -->
+<div class="relative aspect-square bg-surface-container-lowest overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Technical weatherproof waterproof storm shell jacket photographed on ghost mannequin against pure dark background, obsidian black colorway, showing articulated hood and taped waterproof zip channels." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXor2MSHTlT0h-GTO3cNGWTq_JzmvHxvNWJzv9GSYE5HoxYeOr-6J7emlbDmvzP-4tsmJJW0oxk-fXZwUtuf6490SSfgSGaiudf-rOwJItHsK_Wd5kaU-nAXNVISjcnedzGi0K8rNUuD5RtZQ4LO90Em68ovJjkRpsKzNaaxIOS9xgmW6ii733wzx8bJQzcCunR-x9lSYC2q2ZaGpvZspzc_c5zQlJacJVjNWoDiTvlMBR5gBjBgjp"/>
+<!-- Badges -->
+<div class="absolute top-3 left-3 flex flex-col gap-1 z-10">
+<span class="bg-primary-container text-on-primary-container font-label-code-xs text-label-code-xs px-2 py-0.5 rounded font-bold uppercase tracking-wider">
+                BEST SELLER
+              </span>
+<span class="bg-surface-container-highest text-error font-label-code-xs text-label-code-xs px-2 py-0.5 rounded font-bold uppercase">
+                SAVE 16%
+              </span>
+</div>
+<!-- Wishlist Heart Button -->
+<button class="absolute top-3 right-3 w-8 h-8 rounded-lg bg-surface/80 backdrop-blur-md text-on-surface-variant hover:text-error flex items-center justify-center transition-colors z-10">
+<span class="material-symbols-outlined text-lg">favorite</span>
+</button>
+<!-- Angle Preview Toggle Pill -->
+<div class="absolute bottom-2 left-1/2 -translate-x-1/2 bg-surface/90 backdrop-blur-sm px-2 py-1 rounded-full flex gap-1 z-10 opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+</div>
+</div>
+<!-- Card Content / Spec Breakdown -->
+<div class="p-space-md flex flex-col flex-1 justify-between space-y-space-sm">
+<div>
+<div class="flex items-center justify-between text-body-sm font-body-sm text-outline mb-1">
+<span>OUTERWEAR</span>
+<div class="flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-sm leading-none">star</span>
+<span class="font-label-code-xs text-label-code-xs text-on-surface font-semibold">4.9</span>
+<span class="text-outline text-label-code-xs font-label-code-xs">(384)</span>
+</div>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold">K-01 Stealth Storm Shell</h3>
+<!-- Pricing -->
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-headline-md text-headline-md text-on-surface font-bold">$320.00</span>
+<span class="font-body-sm text-body-sm text-outline line-through">$380.00</span>
+</div>
+</div>
+<!-- Inventory Micro-Bar -->
+<div class="space-y-1">
+<div class="flex justify-between font-label-code-xs text-label-code-xs">
+<span class="text-error font-bold">Only 4 left in M/L</span>
+<span class="text-outline">High Velocity</span>
+</div>
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-error h-full rounded-full" style="width: 88%;"></div>
+</div>
+</div>
+<!-- Color Swatches -->
+<div class="flex items-center gap-2 pt-1">
+<span class="w-4 h-4 rounded-full bg-surface-container-lowest ring-2 ring-primary cursor-pointer" title="Obsidian Black"></span>
+<span class="w-4 h-4 rounded-full bg-surface-variant cursor-pointer hover:scale-110 transition-transform" title="Steel Grey"></span>
+<span class="w-4 h-4 rounded-full bg-primary-fixed cursor-pointer hover:scale-110 transition-transform" title="Deep Navy"></span>
+</div>
+<!-- Instant Quick Add Button -->
+<button class="w-full bg-surface-container-high hover:bg-primary-container hover:text-on-primary-container text-on-surface font-label-code text-label-code py-2.5 rounded font-semibold uppercase transition-all duration-150 flex items-center justify-center gap-2" onclick="openCartDrawer()">
+<span class="material-symbols-outlined text-base">shopping_cart</span>
+<span>+ Quick Add</span>
+</button>
+</div>
+</div>
+<!-- CARD 2: Acro Modular Cargo Pant -->
+<div class="bg-surface-container-low rounded-xl overflow-hidden flex flex-col group transition-all duration-300 hover:bg-surface-container shadow-md">
+<div class="relative aspect-square bg-surface-container-lowest overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Tactical engineered cargo pants in dark slate gray laid out with magnetic thigh utility pouches and articulated articulated knee darting on minimal dark pedestal." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5R2mExeJLkEMBtg4Qjzui4wLJTDxt9z7omoeH17RsBHQDX1alrys2V1UMwmBkpjW-PbB7bJPQH_OCMhpaTw1-bR0HVVdGsZbpTJFlkZkkCFZ1TBR0KNFP3waIpko-wK7sI3-SVIyq0sQnch_BTn3WrgoZOcKw0Xx7CGOLxKCODT9w17dmxZFvc-CVL3EskdaTB9tiWSFT8VaJGoQQPB1wxurbdkFNBlmTnrG2AXctx3F6plVG2aYA"/>
+<div class="absolute top-3 left-3 flex flex-col gap-1 z-10">
+<span class="bg-secondary-container text-on-secondary-container font-label-code-xs text-label-code-xs px-2 py-0.5 rounded font-bold uppercase tracking-wider flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-on-secondary-container animate-ping"></span>
+                LOW STOCK
+              </span>
+</div>
+<button class="absolute top-3 right-3 w-8 h-8 rounded-lg bg-surface/80 backdrop-blur-md text-on-surface-variant hover:text-error flex items-center justify-center transition-colors z-10">
+<span class="material-symbols-outlined text-lg">favorite</span>
+</button>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between space-y-space-sm">
+<div>
+<div class="flex items-center justify-between text-body-sm font-body-sm text-outline mb-1">
+<span>BOTTOMS</span>
+<div class="flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-sm leading-none">star</span>
+<span class="font-label-code-xs text-label-code-xs text-on-surface font-semibold">4.8</span>
+<span class="text-outline text-label-code-xs font-label-code-xs">(210)</span>
+</div>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold">Acro Modular Cargo Pant</h3>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-headline-md text-headline-md text-on-surface font-bold">$185.00</span>
+<span class="font-body-sm text-body-sm text-outline line-through">$210.00</span>
+</div>
+</div>
+<!-- Inventory Micro-Bar -->
+<div class="space-y-1">
+<div class="flex justify-between font-label-code-xs text-label-code-xs">
+<span class="text-secondary font-bold">Only 2 left in batch</span>
+<span class="text-outline">Near Depletion</span>
+</div>
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 95%;"></div>
+</div>
+</div>
+<div class="flex items-center gap-2 pt-1">
+<span class="w-4 h-4 rounded-full bg-surface-variant ring-2 ring-primary cursor-pointer"></span>
+<span class="w-4 h-4 rounded-full bg-surface-container-lowest cursor-pointer"></span>
+</div>
+<button class="w-full bg-surface-container-high hover:bg-primary-container hover:text-on-primary-container text-on-surface font-label-code text-label-code py-2.5 rounded font-semibold uppercase transition-all duration-150 flex items-center justify-center gap-2" onclick="openCartDrawer()">
+<span class="material-symbols-outlined text-base">shopping_cart</span>
+<span>+ Quick Add</span>
+</button>
+</div>
+</div>
+<!-- CARD 3: Aero-Grid Thermal Half-Zip -->
+<div class="bg-surface-container-low rounded-xl overflow-hidden flex flex-col group transition-all duration-300 hover:bg-surface-container shadow-md">
+<div class="relative aspect-square bg-surface-container-lowest overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Technical waffle grid pullover half zip sweater in muted sage olive dark green, studio close up showing ergonomic thumb holes and high windproof collar." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAvAwAzgBBWNItqh7VAPN3RLvs02k9hBgCo-MRz23MxjSOMdEy3_KWsKoB1YEL-KilBGNa0rywy8pulHWfNBvlLdeXgxRSMb0l6Oj1E53vcm-iHly5rY6B_F32rVJYZ2rgrIm9UnH-S6bhc5OCAtqRwgykSd7bJGaEnuTQcLWpT5LZny7vxgZewsnQemV9gUcV1Cb6w9f1HkM3sXLEe6hkHO-WY1oPkqfyONu4BASDKHw2k1XrCg9p"/>
+<div class="absolute top-3 left-3 flex flex-col gap-1 z-10">
+<span class="bg-tertiary-container text-on-tertiary-container font-label-code-xs text-label-code-xs px-2 py-0.5 rounded font-bold uppercase tracking-wider">
+                NEW RELEASE
+              </span>
+</div>
+<button class="absolute top-3 right-3 w-8 h-8 rounded-lg bg-surface/80 backdrop-blur-md text-on-surface-variant hover:text-error flex items-center justify-center transition-colors z-10">
+<span class="material-symbols-outlined text-lg">favorite</span>
+</button>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between space-y-space-sm">
+<div>
+<div class="flex items-center justify-between text-body-sm font-body-sm text-outline mb-1">
+<span>MIDLAYER</span>
+<div class="flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-sm leading-none">star</span>
+<span class="font-label-code-xs text-label-code-xs text-on-surface font-semibold">5.0</span>
+<span class="text-outline text-label-code-xs font-label-code-xs">(89)</span>
+</div>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold">Aero-Grid Thermal Half-Zip</h3>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-headline-md text-headline-md text-on-surface font-bold">$140.00</span>
+</div>
+</div>
+<!-- Inventory Micro-Bar -->
+<div class="space-y-1">
+<div class="flex justify-between font-label-code-xs text-label-code-xs">
+<span class="text-tertiary font-bold">In Stock</span>
+<span class="text-outline">Ready to Ship</span>
+</div>
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-tertiary h-full rounded-full" style="width: 40%;"></div>
+</div>
+</div>
+<div class="flex items-center gap-2 pt-1">
+<span class="w-4 h-4 rounded-full bg-surface-variant ring-2 ring-primary cursor-pointer"></span>
+<span class="w-4 h-4 rounded-full bg-surface-container-lowest cursor-pointer"></span>
+</div>
+<button class="w-full bg-surface-container-high hover:bg-primary-container hover:text-on-primary-container text-on-surface font-label-code text-label-code py-2.5 rounded font-semibold uppercase transition-all duration-150 flex items-center justify-center gap-2" onclick="openCartDrawer()">
+<span class="material-symbols-outlined text-base">shopping_cart</span>
+<span>+ Quick Add</span>
+</button>
+</div>
+</div>
+<!-- CARD 4: Orbit 28L Waterproof Commuter Pack -->
+<div class="bg-surface-container-low rounded-xl overflow-hidden flex flex-col group transition-all duration-300 hover:bg-surface-container shadow-md">
+<div class="relative aspect-square bg-surface-container-lowest overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Sleek aerodynamic waterproof commuter backpack with roll top opening, taped seams and magnetic hardware shot in sharp side profile on charcoal concrete." src="https://lh3.googleusercontent.com/aida-public/AB6AXuACV1sGJoU06LVsGuyQwAuG6Ahux7SMcc4KuQycgz51I3m1tfEnqdyJBIJY7iUz9S5WCWssVMx9lepzNuTe2PFiwLG3YokRlSxM2KtZ9pHauj1B_ET20Geo9rhKgT4mJZZ5E_0X5irCY0oqoLCCNQjuh1WLc2DuI7cwC0BGOmLBtsvbF9LMR4xztZgIWU2qP2Ts_SQLTfAtZzCrvTYsaU6QzUEbOR125UBrx2BIgvpmF0I0eF53Hqh3"/>
+<div class="absolute top-3 left-3 flex flex-col gap-1 z-10">
+<span class="bg-primary-fixed text-on-primary-fixed font-label-code-xs text-label-code-xs px-2 py-0.5 rounded font-bold uppercase tracking-wider">
+                LIMITED RUN
+              </span>
+</div>
+<button class="absolute top-3 right-3 w-8 h-8 rounded-lg bg-surface/80 backdrop-blur-md text-on-surface-variant hover:text-error flex items-center justify-center transition-colors z-10">
+<span class="material-symbols-outlined text-lg">favorite</span>
+</button>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between space-y-space-sm">
+<div>
+<div class="flex items-center justify-between text-body-sm font-body-sm text-outline mb-1">
+<span>LOADOUT</span>
+<div class="flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-sm leading-none">star</span>
+<span class="font-label-code-xs text-label-code-xs text-on-surface font-semibold">4.9</span>
+<span class="text-outline text-label-code-xs font-label-code-xs">(142)</span>
+</div>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold">Orbit 28L Commuter Pack</h3>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-headline-md text-headline-md text-on-surface font-bold">$220.00</span>
+<span class="font-body-sm text-body-sm text-outline line-through">$260.00</span>
+</div>
+</div>
+<!-- Inventory Micro-Bar -->
+<div class="space-y-1">
+<div class="flex justify-between font-label-code-xs text-label-code-xs">
+<span class="text-secondary font-bold">Only 7 units remaining</span>
+<span class="text-outline">Run 04</span>
+</div>
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 78%;"></div>
+</div>
+</div>
+<div class="flex items-center gap-2 pt-1">
+<span class="w-4 h-4 rounded-full bg-surface-container-lowest ring-2 ring-primary cursor-pointer"></span>
+</div>
+<button class="w-full bg-surface-container-high hover:bg-primary-container hover:text-on-primary-container text-on-surface font-label-code text-label-code py-2.5 rounded font-semibold uppercase transition-all duration-150 flex items-center justify-center gap-2" onclick="openCartDrawer()">
+<span class="material-symbols-outlined text-base">shopping_cart</span>
+<span>+ Quick Add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: Bento Deal Spotlight / Featured Collection Countdown -->
+<section class="w-full px-margin-desktop py-space-xl">
+<div class="max-w-7xl mx-auto">
+<div class="bg-surface-container-low rounded-xl overflow-hidden shadow-2xl grid grid-cols-1 lg:grid-cols-12 relative">
+<!-- Background Lighting Accent -->
+<div class="absolute -right-24 -top-24 w-96 h-96 bg-primary-container/10 rounded-full blur-3xl pointer-events-none"></div>
+<!-- Left Visual Side (5 Cols) -->
+<div class="lg:col-span-5 relative min-h-[340px] bg-surface-container-lowest">
+<img class="w-full h-full object-cover object-center" data-alt="Editorial flatlay kit of high end outdoor techwear including Gore-Tex shell, tactical modular pouches, waterproof sling bag and gloves arranged with military precision on dark steel table." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDM1aYd0ARt8sc-6_GGMklry19R-qdGxpSmAO9KzS49YbWKipwm8n4NNC9g4CpDs5D1Y1RXbafBFCjrYpbVruIii9SpYnHUXbywlqqGQdwkEYnQPFx-L6UkVHHcoEVTjePB3FoQG4GNxSUHRznoqZPkAmuw0irFM5VsKp2dOcNP1Nc-50XgMk94mUY3NsaMsqvwZOzFMlce9FpwoN8agdAj7gc0NMrgz7qPOS18uXFKEz9Nu3JWOtm0"/>
+<div class="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-surface-container-low hidden lg:block"></div>
+<div class="absolute top-4 left-4 bg-secondary-container text-on-secondary-container font-label-code text-label-code font-bold px-3 py-1 rounded uppercase">
+            FLAGSHIP PACK • SAVE $120
+          </div>
+</div>
+<!-- Right Content & Countdown Area (7 Cols) -->
+<div class="lg:col-span-7 p-space-lg lg:p-space-xl flex flex-col justify-between space-y-space-md z-10">
+<div>
+<div class="flex items-center gap-space-sm mb-2">
+<span class="font-label-code-xs text-label-code-xs text-tertiary uppercase">LIMITED BUNDLE SYSTEM</span>
+<span class="text-outline">•</span>
+<span class="font-label-code-xs text-label-code-xs text-on-surface-variant">SERIES ARCHIVE 01</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl text-on-surface uppercase font-bold tracking-tight">
+              Apex Cold-Weather Utility Bundle
+            </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 max-w-xl">
+              Complete alpine resilience kit. Includes the K-01 Stealth Storm Shell, Acro Modular Pant, and Orbit 28L Pack in matching matte obsidian stealth livery.
+            </p>
+<!-- Technical Spec Checkmarks -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm pt-space-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-lg">check_circle</span>
+<span class="font-label-code-xs text-label-code-xs text-on-surface uppercase">Gore-Tex Pro 3-Layer</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-lg">check_circle</span>
+<span class="font-label-code-xs text-label-code-xs text-on-surface uppercase">Fidlock Closures</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-lg">check_circle</span>
+<span class="font-label-code-xs text-label-code-xs text-on-surface uppercase">Lifetime Warranty</span>
+</div>
+</div>
+</div>
+<!-- Live Dynamic Countdown Timer Block -->
+<div class="bg-surface-container p-space-md rounded-lg flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<div>
+<span class="font-label-code-xs text-label-code-xs text-outline uppercase block mb-1">PROMOTION EXPIRES IN</span>
+<div class="flex items-center gap-2">
+<div class="bg-surface-container-high px-2.5 py-1.5 rounded text-center min-w-[48px]">
+<span class="font-label-code text-headline-md font-bold text-on-surface block" id="timer-days">02</span>
+<span class="font-label-code-xs text-[9px] text-outline uppercase">Days</span>
+</div>
+<span class="font-bold text-outline">:</span>
+<div class="bg-surface-container-high px-2.5 py-1.5 rounded text-center min-w-[48px]">
+<span class="font-label-code text-headline-md font-bold text-on-surface block" id="timer-hours">14</span>
+<span class="font-label-code-xs text-[9px] text-outline uppercase">Hours</span>
+</div>
+<span class="font-bold text-outline">:</span>
+<div class="bg-surface-container-high px-2.5 py-1.5 rounded text-center min-w-[48px]">
+<span class="font-label-code text-headline-md font-bold text-on-surface block" id="timer-mins">38</span>
+<span class="font-label-code-xs text-[9px] text-outline uppercase">Mins</span>
+</div>
+<span class="font-bold text-outline">:</span>
+<div class="bg-surface-container-high px-2.5 py-1.5 rounded text-center min-w-[48px]">
+<span class="font-label-code text-headline-md font-bold text-secondary block" id="timer-secs">42</span>
+<span class="font-label-code-xs text-[9px] text-outline uppercase">Secs</span>
+</div>
+</div>
+</div>
+<!-- Direct CTA Button -->
+<button class="bg-primary-container hover:bg-primary-fixed-dim text-on-primary-container px-space-lg py-3 rounded font-headline-md text-headline-md font-semibold uppercase transition-all duration-150 transform active:scale-95 shadow-lg shadow-primary-container/20 shrink-0" onclick="openCartDrawer()">
+              Claim Bundle Offer — $445
+            </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 5: Trust Badges & Value Propositions (4-Column Strip) -->
+<section class="w-full px-margin-desktop py-space-xl bg-surface-container-lowest">
+<div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Trust Pillar 1 -->
+<div class="p-space-md rounded-lg bg-surface-container-low flex flex-col space-y-space-xs">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary mb-1">
+<span class="material-symbols-outlined text-2xl">flight_takeoff</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-on-surface font-semibold">Express Global Delivery</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Tracked 2-4 day priority air shipping. Customs cleared and carbon neutralized worldwide.</p>
+</div>
+<!-- Trust Pillar 2 -->
+<div class="p-space-md rounded-lg bg-surface-container-low flex flex-col space-y-space-xs">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-tertiary mb-1">
+<span class="material-symbols-outlined text-2xl">lock</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-on-surface font-semibold">Secure Multi-Gateway</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">End-to-end 256-bit encrypted transactions via Stripe, Apple Pay, and decentralized tokens.</p>
+</div>
+<!-- Trust Pillar 3 -->
+<div class="p-space-md rounded-lg bg-surface-container-low flex flex-col space-y-space-xs">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary mb-1">
+<span class="material-symbols-outlined text-2xl">published_with_changes</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-on-surface font-semibold">30-Day Effortless Returns</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Pre-printed return labels included in all packages. Immediate credit upon courier scan.</p>
+</div>
+<!-- Trust Pillar 4 -->
+<div class="p-space-md rounded-lg bg-surface-container-low flex flex-col space-y-space-xs">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary-fixed mb-1">
+<span class="material-symbols-outlined text-2xl">headset_mic</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-on-surface font-semibold">24/7 Dedicated Concierge</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Direct channel to technical garment specialists for sizing, modular compatibility, and care.</p>
+</div>
+</div>
+</section>
+<!-- SECTION 6: Interactive Slide-out Cart Drawer Preview (Docked / Slideable) -->
+<!-- Backdrop -->
+<div class="fixed inset-0 bg-surface-container-lowest/80 backdrop-blur-sm z-50 transition-opacity duration-300 opacity-0 pointer-events-none" id="cart-drawer-backdrop" onclick="closeCartDrawer()"></div>
+<!-- Cart Drawer Panel -->
+<aside class="fixed top-0 right-0 h-full w-full sm:w-[440px] bg-surface-container-low shadow-2xl z-50 transform translate-x-full transition-transform duration-300 ease-out flex flex-col justify-between" id="cart-drawer">
+<!-- Drawer Header -->
+<div class="p-space-md bg-surface-container border-b border-surface-container-high flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">shopping_bag</span>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">Your Bag <span class="text-outline font-normal">(2 items)</span></h3>
+</div>
+<button class="p-1 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" onclick="closeCartDrawer()">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<!-- Free Shipping Progress Tracker -->
+<div class="p-space-sm bg-surface-container-highest flex flex-col gap-1.5">
+<div class="flex items-center justify-between font-label-code-xs text-label-code-xs">
+<span class="text-tertiary flex items-center gap-1 font-bold">
+<span class="material-symbols-outlined text-sm">local_shipping</span>
+          FREE WORLDWIDE SHIPPING UNLOCKED
+        </span>
+<span class="text-on-surface-variant">$150.00 / $150.00</span>
+</div>
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden">
+<div class="bg-gradient-to-r from-primary to-tertiary h-full rounded-full w-full animate-pulse"></div>
+</div>
+</div>
+<!-- Scrollable Bag Items List -->
+<div class="flex-1 overflow-y-auto p-space-md space-y-space-md">
+<!-- Cart Item 1 -->
+<div class="flex gap-space-sm bg-surface-container p-space-sm rounded-lg">
+<div class="w-20 h-20 rounded bg-surface-container-lowest shrink-0 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Square technical apparel product shot of dark storm shell jacket" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwOQDrSGz2DmAFQe8an3sIVahqxjDa2TdM-W1jke0dMrgWZc6b_8BkA_IR-f6zr6E5-RXTSTKq1kpG8hVbB2X5wqZ1I0IukW7Yg3lhycz7I2aD9-Zl63vkR2zH54S8ZPZc7s3SRG7jdjAyYyKygkgw4Ohg4oWXofALczU5QUvbCcNoUUfQjHPJBOpNRC9zpHLQYBdcCL_3QwYebJ3L_MKZCKqVYUDg3RlxLOoYjXCIK8rPMaIrAfRQ"/>
+</div>
+<div class="flex-1 flex flex-col justify-between">
+<div class="flex justify-between items-start">
+<div>
+<h4 class="font-body-md text-body-md text-on-surface font-semibold">K-01 Stealth Storm Shell</h4>
+<p class="font-label-code-xs text-label-code-xs text-outline">Size: L • Obsidian Black</p>
+</div>
+<button class="text-outline hover:text-error transition-colors">
+<span class="material-symbols-outlined text-base">delete</span>
+</button>
+</div>
+<div class="flex justify-between items-center mt-2">
+<!-- Stepper -->
+<div class="flex items-center bg-surface-container-high rounded px-1">
+<button class="px-2 py-0.5 text-on-surface font-bold hover:text-primary">-</button>
+<span class="px-2 font-label-code text-label-code text-on-surface">1</span>
+<button class="px-2 py-0.5 text-on-surface font-bold hover:text-primary">+</button>
+</div>
+<span class="font-label-code text-label-code text-on-surface font-bold">$320.00</span>
+</div>
+</div>
+</div>
+<!-- Cart Item 2 -->
+<div class="flex gap-space-sm bg-surface-container p-space-sm rounded-lg">
+<div class="w-20 h-20 rounded bg-surface-container-lowest shrink-0 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Pack of three pairs of technical merino wool crew socks in charcoal black on dark minimal background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6CER2YbGzpdHwjY8opjwlMayrG6_4B4uHX4cHF81TG-ZrQ59kyNSW5RAzRh2Sv3oqGkZZAS9GfDsX8ZuvApfVBeMgVrKTeda3qxhSk98ktVGuY2eJPwAA6g6DTpp6u8cvomvfShkGGuO2aDWbSfFTyxhm9FlGewedl-ynI2d_ydLhCotXdrCcwAkoHZp9yPREuOL1dNmTLr-_BruXHWYafnUKprlQ7k0Sn2iU93l9RMXnvVY_xhoP"/>
+</div>
+<div class="flex-1 flex flex-col justify-between">
+<div class="flex justify-between items-start">
+<div>
+<h4 class="font-body-md text-body-md text-on-surface font-semibold">Tech Utility Socks (3-Pack)</h4>
+<p class="font-label-code-xs text-label-code-xs text-outline">Size: One Size • Charcoal</p>
+</div>
+<button class="text-outline hover:text-error transition-colors">
+<span class="material-symbols-outlined text-base">delete</span>
+</button>
+</div>
+<div class="flex justify-between items-center mt-2">
+<div class="flex items-center bg-surface-container-high rounded px-1">
+<button class="px-2 py-0.5 text-on-surface font-bold hover:text-primary">-</button>
+<span class="px-2 font-label-code text-label-code text-on-surface">1</span>
+<button class="px-2 py-0.5 text-on-surface font-bold hover:text-primary">+</button>
+</div>
+<span class="font-label-code text-label-code text-on-surface font-bold">$24.00</span>
+</div>
+</div>
+</div>
+<!-- Promo Code Field -->
+<div class="pt-space-xs">
+<div class="flex gap-space-xs">
+<input class="bg-surface-container text-on-surface px-space-sm py-2 rounded font-label-code text-label-code uppercase flex-1 focus:outline-none focus:ring-1 focus:ring-primary" placeholder="PROMO CODE" type="text" value="WINTER20"/>
+<button class="bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-code text-label-code px-space-md py-2 rounded font-semibold uppercase transition-colors">
+            APPLY
+          </button>
+</div>
+<p class="font-label-code-xs text-label-code-xs text-tertiary mt-1.5 flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">check</span>
+          Code WINTER20 applied (-$20.00)
+        </p>
+</div>
+</div>
+<!-- Drawer Footer / Checkout Strip -->
+<div class="p-space-md bg-surface-container border-t border-surface-container-high space-y-space-sm">
+<div class="space-y-1 font-body-sm text-body-sm text-on-surface-variant">
+<div class="flex justify-between">
+<span>Subtotal</span>
+<span class="text-on-surface font-label-code text-label-code">$344.00</span>
+</div>
+<div class="flex justify-between text-tertiary font-label-code text-label-code">
+<span>Worldwide Express Shipping</span>
+<span>FREE</span>
+</div>
+<div class="flex justify-between text-primary font-label-code text-label-code">
+<span>Seasonal Discount</span>
+<span>-$20.00</span>
+</div>
+<div class="flex justify-between text-on-surface font-headline-md text-headline-md font-bold pt-2 border-t border-surface-container-highest">
+<span>Estimated Total</span>
+<span class="text-primary">$324.00</span>
+</div>
+</div>
+<!-- Primary Checkout Trigger -->
+<button class="w-full bg-primary-container hover:bg-primary-fixed-dim text-on-primary-container py-3.5 rounded font-headline-md text-headline-md font-semibold uppercase transition-all duration-150 transform active:scale-95 shadow-lg shadow-primary-container/20 flex items-center justify-center gap-2" onclick="window.location.href='CheckOut.html'">
+<span class="material-symbols-outlined text-xl">lock</span>
+<span>Proceed to Checkout • $324.00</span>
+</button>
+<!-- Express One-Click Buttons -->
+<div class="grid grid-cols-2 gap-2">
+<button class="bg-surface-container-highest hover:bg-surface-bright text-on-surface py-2 rounded font-label-code-xs text-label-code-xs uppercase font-bold flex items-center justify-center gap-1" onclick="window.location.href='CheckOut.html'">
+<span>Pay Express</span>
+</button>
+<button class="bg-surface-container-highest hover:bg-surface-bright text-on-surface py-2 rounded font-label-code-xs text-label-code-xs uppercase font-bold flex items-center justify-center gap-1" onclick="window.location.href='CheckOut.html'">
+<span>GPay Direct</span>
+</button>
+</div>
+<!-- Trust Security Micro-Guarantee -->
+<div class="flex items-center justify-center gap-1.5 text-outline font-label-code-xs text-label-code-xs pt-1">
+<span class="material-symbols-outlined text-sm">security</span>
+<span>Guaranteed 256-bit Secure Atmospheric Checkout</span>
+</div>
+</div>
+</aside>
+<!-- Interactive Client-side Script -->
+<script>
+    function openCartDrawer() {
+      const drawer = document.getElementById('cart-drawer');
+      const backdrop = document.getElementById('cart-drawer-backdrop');
+      if (drawer && backdrop) {
+        drawer.classList.remove('translate-x-full');
+        backdrop.classList.remove('opacity-0', 'pointer-events-none');
+        backdrop.classList.add('opacity-100');
+      }
+    }
+
+    function closeCartDrawer() {
+      const drawer = document.getElementById('cart-drawer');
+      const backdrop = document.getElementById('cart-drawer-backdrop');
+      if (drawer && backdrop) {
+        drawer.classList.add('translate-x-full');
+        backdrop.classList.remove('opacity-100');
+        backdrop.classList.add('opacity-0', 'pointer-events-none');
+      }
+    }
+
+    // Active Countdown Micro-timer simulation
+    (function initCountdown() {
+      let seconds = 42;
+      let minutes = 38;
+      let hours = 14;
+      let days = 2;
+
+      const secEl = document.getElementById('timer-secs');
+      const minEl = document.getElementById('timer-mins');
+      const hourEl = document.getElementById('timer-hours');
+
+      if (secEl) {
+        setInterval(() => {
+          seconds--;
+          if (seconds < 0) {
+            seconds = 59;
+            minutes--;
+            if (minutes < 0) {
+              minutes = 59;
+              hours--;
+              if (hourEl) hourEl.textContent = String(hours).padStart(2, '0');
+            }
+            if (minEl) minEl.textContent = String(minutes).padStart(2, '0');
+          }
+          secEl.textContent = String(seconds).padStart(2, '0');
+        }, 1000);
+      }
+    })();
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest mt-space-xl"><div class="w-full px-margin-desktop py-margin-desktop"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-gutter-desktop mb-space-xl"><div class="lg:col-span-1"><div class="flex items-center gap-space-sm mb-space-md"><img alt="Kinesis Brand Logo" class="h-6 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WXGH4d2fTNSJ3gXEvlPKyYSXFXqYDFOw3Ztvw68JRVozGVyAl7kIpl6gZdrEqOstyIfOGwzoT16MYlVNEwj8MJAAJ06sJIudbw6u89nD6McDdUHaLttjiSbO3N4QWe8OaE4ZrXO621aZfp75SvMGFEYf7f9JRFQvna9GjEMVBCu5YMQxnCmrCNCmR2Gu6hY0yeZLWravKLx6ZvRO0lbMX6IZwtjHx1QLy2fPZmveMco16PMdimRCeO-A"/><span class="font-headline-md text-headline-md font-semibold tracking-tight uppercase text-on-surface">KINESIS</span></div><p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Precision engineered technical apparel designed for extreme mobility, atmospheric resilience, and high-performance utility.</p><div class="flex items-center gap-space-xs text-label-code-xs font-label-code-xs text-tertiary"><span class="material-symbols-outlined text-sm leading-none">verified</span><span>ISO-9001 CERTIFIED CRAFT</span></div></div><div><h4 class="font-label-code text-label-code uppercase text-on-surface mb-space-md">ENGINEERED CATS</h4><ul class="space-y-space-sm font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-on-surface transition-colors" data-path="men" href="#">Men's Outerwear</a></li><li><a class="hover:text-on-surface transition-colors" data-path="women" href="#">Women's Modules</a></li><li><a class="hover:text-on-surface transition-colors" data-path="techwear" href="#">Ballistic Cargo Systems</a></li><li><a class="hover:text-on-surface transition-colors" data-path="archive" href="#">Hydro-Shield Shells</a></li><li><a class="hover:text-on-surface transition-colors" data-path="techwear" href="#">Modular Modular Loadouts</a></li></ul></div><div><h4 class="font-label-code text-label-code uppercase text-on-surface mb-space-md">CLIENT OPS</h4><ul class="space-y-space-sm font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-on-surface transition-colors" data-path="order-tracking" href="Project.html">Tactical Order Tracking</a></li><li><a class="hover:text-on-surface transition-colors" data-path="support" href="#">Repairs &amp; Atmospheric Warranty</a></li><li><a class="hover:text-on-surface transition-colors" data-path="support" href="#">Global Transit Matrix</a></li><li><a class="hover:text-on-surface transition-colors" data-path="support" href="#">Returns &amp; Recalibration</a></li><li><a class="hover:text-on-surface transition-colors" data-path="support" href="#">Field Support Desk</a></li></ul></div><div><h4 class="font-label-code text-label-code uppercase text-on-surface mb-space-md">SPECIFICATIONS</h4><ul class="space-y-space-sm font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-on-surface transition-colors" data-path="material-index" href="#">Gore-Tex Pro Lab Specs</a></li><li><a class="hover:text-on-surface transition-colors" data-path="material-index" href="#">Dyneema Composite Fabrics</a></li><li><a class="hover:text-on-surface transition-colors" data-path="sustainability-protocol" href="#">Atmospheric Testing Protocol</a></li><li><a class="hover:text-on-surface transition-colors" data-path="sustainability-protocol" href="#">Circularity &amp; Reclamation</a></li><li><a class="hover:text-on-surface transition-colors" data-path="archive" href="#">Field R&amp;D Archive</a></li></ul></div><div class="lg:col-span-1"><h4 class="font-label-code text-label-code uppercase text-on-surface mb-space-sm">TRANSMISSION FEED</h4><p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">Receive technical drop notices and encrypted prototype releases.</p><form class="flex flex-col gap-space-xs" onsubmit="event.preventDefault();"><div class="flex bg-surface-container-low rounded-lg p-1"><input class="bg-transparent px-space-sm py-1.5 text-body-sm font-body-sm text-on-surface placeholder:text-outline focus:outline-none w-full" placeholder="NODE@CLIENT.COM" type="email"/><button class="bg-primary-container text-on-primary-container px-space-sm py-1.5 rounded text-label-code-xs font-label-code-xs uppercase font-bold hover:bg-primary-fixed-dim transition-colors" type="submit">ENGAGE</button></div><span class="text-label-code-xs font-label-code-xs text-outline">ZERO SPAM. STRICT DATA ENCRYPTION.</span></form></div></div><div class="pt-space-md flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex flex-wrap items-center gap-space-md text-label-code-xs font-label-code-xs text-outline"><span>© 2025 KINESIS CORP. ALL RIGHTS RESERVED.</span><a class="hover:text-on-surface transition-colors" data-path="privacy-policy" href="#">PRIVACY PROTOCOL</a><a class="hover:text-on-surface transition-colors" data-path="terms-of-service" href="#">TERMS OF DEPLOYMENT</a><a class="hover:text-on-surface transition-colors" data-path="support" href="#">SECURITY</a></div><div class="flex items-center gap-space-sm text-label-code-xs font-label-code-xs text-on-surface-variant"><span class="px-2 py-1 bg-surface-container-low rounded uppercase">APPLE PAY</span><span class="px-2 py-1 bg-surface-container-low rounded uppercase">VISA</span><span class="px-2 py-1 bg-surface-container-low rounded uppercase">MASTERCARD</span><span class="px-2 py-1 bg-surface-container-low rounded uppercase">AMEX</span><span class="px-2 py-1 bg-surface-container-low rounded uppercase">STRIPE</span></div></div></div></footer></body></html>

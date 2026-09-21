@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_blank" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "tertiary": "#4edea3",
+          "on-secondary": "#472a00",
+          "on-primary-fixed": "#00174b",
+          "secondary-fixed": "#ffddb8",
+          "outline-variant": "#434655",
+          "on-tertiary-fixed-variant": "#005236",
+          "outline": "#8d90a0",
+          "tertiary-fixed": "#6ffbbe",
+          "on-primary": "#002a78",
+          "on-surface": "#dfe2ed",
+          "on-primary-container": "#eeefff",
+          "error-container": "#93000a",
+          "tertiary-fixed-dim": "#4edea3",
+          "surface-container-highest": "#31353d",
+          "on-error": "#690005",
+          "surface-bright": "#353941",
+          "primary-fixed": "#dbe1ff",
+          "surface-container": "#1c2027",
+          "on-tertiary": "#003824",
+          "on-secondary-fixed-variant": "#653e00",
+          "on-secondary-fixed": "#2a1700",
+          "primary-fixed-dim": "#b4c5ff",
+          "surface-container-high": "#262a32",
+          "on-secondary-container": "#5b3800",
+          "on-tertiary-container": "#bdffdb",
+          "inverse-primary": "#0053db",
+          "on-primary-fixed-variant": "#003ea8",
+          "inverse-surface": "#dfe2ed",
+          "surface-container-lowest": "#0a0e15",
+          "surface": "#0f131b",
+          "on-surface-variant": "#c3c6d7",
+          "surface-tint": "#b4c5ff",
+          "on-tertiary-fixed": "#002113",
+          "primary": "#b4c5ff",
+          "on-background": "#dfe2ed",
+          "secondary-fixed-dim": "#ffb95f",
+          "tertiary-container": "#007d55",
+          "surface-container-low": "#181c23",
+          "primary-container": "#2563eb",
+          "background": "#0f131b",
+          "surface-dim": "#0f131b",
+          "error": "#ffb4ab",
+          "surface-variant": "#31353d",
+          "inverse-on-surface": "#2d3038",
+          "secondary-container": "#ee9800",
+          "on-error-container": "#ffdad6",
+          "secondary": "#ffb95f"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "margin-desktop": "3rem",
+          "margin": "1rem",
+          "space-xl": "2.5rem",
+          "space-lg": "1.5rem",
+          "space-md": "1rem",
+          "space-xs": "0.25rem",
+          "space-sm": "0.5rem",
+          "gutter": "1.25rem",
+          "gutter-desktop": "2rem"
+        },
+        "fontFamily": {
+          "label-code": [
+            "JetBrains Mono"
+          ],
+          "headline-lg": [
+            "Inter"
+          ],
+          "body-sm": [
+            "Inter"
+          ],
+          "headline-xl": [
+            "Inter"
+          ],
+          "body-md": [
+            "Inter"
+          ],
+          "headline-xl-mobile": [
+            "Inter"
+          ],
+          "display-hero-mobile": [
+            "Inter"
+          ],
+          "label-code-xs": [
+            "JetBrains Mono"
+          ],
+          "body-lg": [
+            "Inter"
+          ],
+          "headline-md": [
+            "Inter"
+          ],
+          "display-hero": [
+            "Inter"
+          ]
+        },
+        "fontSize": {
+          "label-code": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.05em",
+              "fontWeight": "500"
+            }
+          ],
+          "headline-lg": [
+            "28px",
+            {
+              "lineHeight": "36px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "500"
+            }
+          ],
+          "body-sm": [
+            "12px",
+            {
+              "lineHeight": "18px",
+              "letterSpacing": "0em",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-xl": [
+            "40px",
+            {
+              "lineHeight": "48px",
+              "letterSpacing": "-0.025em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-md": [
+            "14px",
+            {
+              "lineHeight": "22px",
+              "letterSpacing": "-0.005em",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-xl-mobile": [
+            "28px",
+            {
+              "lineHeight": "34px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "600"
+            }
+          ],
+          "display-hero-mobile": [
+            "36px",
+            {
+              "lineHeight": "42px",
+              "letterSpacing": "-0.025em",
+              "fontWeight": "600"
+            }
+          ],
+          "label-code-xs": [
+            "10px",
+            {
+              "lineHeight": "14px",
+              "letterSpacing": "0.08em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-lg": [
+            "16px",
+            {
+              "lineHeight": "26px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-md": [
+            "20px",
+            {
+              "lineHeight": "28px",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "500"
+            }
+          ],
+          "display-hero": [
+            "56px",
+            {
+              "lineHeight": "64px",
+              "letterSpacing": "-0.03em",
+              "fontWeight": "600"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container min-h-screen flex flex-col"><header class="fixed top-0 left-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.35)]"><div class="w-full px-margin-desktop h-16 flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><a class="flex items-center gap-space-sm group" data-path="home" href="code.html"><img alt="Kinesis Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WXGH4d2fTNSJ3gXEvlPKyYSXFXqYDFOw3Ztvw68JRVozGVyAl7kIpl6gZdrEqOstyIfOGwzoT16MYlVNEwj8MJAAJ06sJIudbw6u89nD6McDdUHaLttjiSbO3N4QWe8OaE4ZrXO621aZfp75SvMGFEYf7f9JRFQvna9GjEMVBCu5YMQxnCmrCNCmR2Gu6hY0yeZLWravKLx6ZvRO0lbMX6IZwtjHx1QLy2fPZmveMco16PMdimRCeO-A"/><span class="font-headline-md text-headline-md font-semibold tracking-tight uppercase text-on-surface group-hover:text-primary transition-colors">Kinesis</span></a><span class="hidden sm:inline-flex items-center gap-1.5 px-space-xs py-0.5 rounded bg-surface-container-high text-outline text-label-code-xs font-label-code-xs uppercase"><span class="w-1.5 h-1.5 rounded-full bg-tertiary animate-pulse"></span>SECURE CHECKOUT</span></div><div class="flex items-center gap-space-md"><div class="hidden md:flex items-center gap-space-xs px-space-sm py-1 rounded bg-surface-container-low text-tertiary"><span class="material-symbols-outlined text-sm leading-none text-tertiary">lock</span><span class="font-label-code-xs text-label-code-xs uppercase tracking-wider text-on-surface-variant">256-BIT ENCRYPTED</span></div><nav class="flex items-center gap-space-sm" data-active-classes="text-primary font-semibold"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors flex items-center gap-1" data-path="support" href="#"><span class="material-symbols-outlined text-base leading-none">support_agent</span>Customer Helpline</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors flex items-center gap-1" data-path="cart" href="code.html"><span class="material-symbols-outlined text-base leading-none">arrow_back</span>Return to Bag</a></nav></div></div></header><main class="w-full pt-16 bg-surface flex-1"><div class="flex flex-col w-full">
+<!-- Micro Telemetry Sub-header -->
+<section class="w-full bg-surface-container-lowest px-margin-desktop py-2.5">
+<div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-space-sm font-label-code-xs text-label-code-xs">
+<div class="flex items-center gap-space-md">
+<span class="inline-flex items-center gap-1.5 text-tertiary">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary animate-ping"></span>
+          ENCRYPTED LINK ACTIVE
+        </span>
+<span class="text-outline">/</span>
+<span class="text-on-surface-variant font-label-code">SESSION: <span class="text-on-surface">KNX-9884-TX</span></span>
+<span class="hidden md:inline text-outline">/</span>
+<span class="hidden md:inline-flex items-center gap-1 text-on-surface-variant">
+          GATEWAY: <span class="text-primary">US-WEST-PRIMARY (SSL/TLS 1.3)</span>
+</span>
+</div>
+<div class="flex items-center gap-space-sm text-outline">
+<span class="material-symbols-outlined text-sm text-tertiary">verified</span>
+<span class="">ESTIMATED FULFILLMENT: <strong class="text-on-surface">OCT 28 – OCT 30</strong></span>
+</div>
+</div>
+</section>
+<!-- Checkout Grid Container -->
+<section class="w-full px-margin-desktop py-space-xl">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-start">
+<!-- LEFT COLUMN: Interaction & Flow (7 cols) -->
+<div class="lg:col-span-7 flex flex-col gap-space-lg min-w-0">
+<!-- Interactive Technical Stepper -->
+<nav aria-label="Checkout Progress" class="w-full bg-surface-container-low rounded-xl p-space-md shadow-sm">
+<ol class="grid grid-cols-4 gap-space-sm items-center">
+<!-- Step 1: Info (Done) -->
+<li class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-tertiary/15 text-tertiary flex items-center justify-center font-label-code-xs font-semibold">
+<span class="material-symbols-outlined text-sm leading-none">check</span>
+</span>
+<span class="hidden sm:inline font-label-code-xs uppercase text-tertiary">01 INFO</span>
+</div>
+<div class="h-1 w-full bg-tertiary rounded-full"></div>
+</li>
+<!-- Step 2: Shipping (Done) -->
+<li class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-tertiary/15 text-tertiary flex items-center justify-center font-label-code-xs font-semibold">
+<span class="material-symbols-outlined text-sm leading-none">check</span>
+</span>
+<span class="hidden sm:inline font-label-code-xs uppercase text-tertiary">02 SHIP</span>
+</div>
+<div class="h-1 w-full bg-tertiary rounded-full"></div>
+</li>
+<!-- Step 3: Payment (Active) -->
+<li class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-primary-container text-on-primary font-label-code-xs flex items-center justify-center shadow-[0_0_12px_rgba(37,99,235,0.45)]">
+                  03
+                </span>
+<span class="font-label-code-xs uppercase text-primary font-semibold flex items-center gap-1">
+                  PAYMENT
+                  <span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+</span>
+</div>
+<div class="h-1 w-full bg-primary-container rounded-full shadow-[0_0_8px_rgba(37,99,235,0.4)]"></div>
+</li>
+<!-- Step 4: Review (Pending) -->
+<li class="flex flex-col gap-1 opacity-50">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-surface-container-highest text-outline font-label-code-xs flex items-center justify-center">
+                  04
+                </span>
+<span class="hidden sm:inline font-label-code-xs uppercase text-outline">REVIEW</span>
+</div>
+<div class="h-1 w-full bg-surface-container-highest rounded-full"></div>
+</li>
+</ol>
+</nav>
+<!-- Express Checkout Strip -->
+<div class="w-full bg-surface-container-low rounded-xl p-space-md flex flex-col gap-space-sm shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-code-xs text-label-code-xs uppercase text-on-surface-variant flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm text-secondary">bolt</span>
+              EXPRESS 1-CLICK AUTHENTICATION
+            </span>
+<span class="font-label-code-xs text-label-code-xs text-outline">FIDO2 / BIOMETRIC READY</span>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-xs">
+<button class="h-11 rounded-lg bg-[#5A31F4] hover:bg-[#4922db] text-white flex items-center justify-center transition-transform active:scale-[0.99] font-body-sm font-semibold shadow-sm" onclick="document.getElementById('three-ds-modal').classList.remove('hidden')" type="button">
+<span class="tracking-wide">shop<span class="text-white/80 font-normal">Pay</span></span>
+</button>
+<button class="h-11 rounded-lg bg-surface-container-highest hover:bg-surface-bright text-on-surface flex items-center justify-center gap-1 transition-transform active:scale-[0.99] font-body-sm font-semibold shadow-sm" onclick="document.getElementById('three-ds-modal').classList.remove('hidden')" type="button">
+<span class="material-symbols-outlined text-base">phone_iphone</span> Pay
+            </button>
+<button class="h-11 rounded-lg bg-surface-container-highest hover:bg-surface-bright text-on-surface flex items-center justify-center gap-1 transition-transform active:scale-[0.99] font-body-sm font-semibold shadow-sm" onclick="document.getElementById('three-ds-modal').classList.remove('hidden')" type="button">
+<span class="font-semibold tracking-tight">G</span>Pay
+            </button>
+<button class="h-11 rounded-lg bg-[#FFC439] hover:bg-[#f0b52b] text-[#003087] flex items-center justify-center transition-transform active:scale-[0.99] font-body-sm font-bold shadow-sm" onclick="document.getElementById('three-ds-modal').classList.remove('hidden')" type="button">
+<span class="italic font-bold tracking-tight">PayPal</span>
+</button>
+</div>
+<div class="relative flex py-2 items-center">
+<div class="flex-grow bg-surface-container-highest h-px"></div>
+<span class="flex-shrink mx-3 text-label-code-xs font-label-code-xs text-outline uppercase tracking-wider">Or continue with encrypted payment protocol</span>
+<div class="flex-grow bg-surface-container-highest h-px"></div>
+</div>
+</div>
+<!-- Confirmed Shipping & Account Telemetry Recap Card -->
+<div class="w-full bg-surface-container-low rounded-xl p-space-md flex flex-col gap-space-sm shadow-sm">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-base">task_alt</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Transmission Dossier</h2>
+</div>
+<span class="font-label-code-xs text-label-code-xs text-tertiary bg-tertiary-container/30 px-2 py-0.5 rounded">STEPS 01-02 VERIFIED</span>
+</div>
+<!-- Recap Data Rows -->
+<div class="grid grid-cols-1 divide-y divide-surface-container-highest/60 font-body-sm text-body-sm">
+<div class="py-2.5 flex items-start justify-between gap-space-sm">
+<div class="flex items-start gap-3">
+<span class="text-outline font-label-code-xs text-label-code-xs uppercase w-20 pt-0.5">Contact</span>
+<div>
+<p class="text-on-surface font-medium">Marcus Vance</p>
+<p class="text-on-surface-variant text-body-sm font-label-code-xs">marcus.vance@apex-corp.io • +1 (206) 555-0194</p>
+</div>
+</div>
+<a class="font-label-code-xs text-label-code-xs text-primary hover:underline uppercase" href="#">Edit</a>
+</div>
+<div class="py-2.5 flex items-start justify-between gap-space-sm">
+<div class="flex items-start gap-3">
+<span class="text-outline font-label-code-xs text-label-code-xs uppercase w-20 pt-0.5">Ship To</span>
+<div>
+<p class="text-on-surface font-medium">Apex Systems Lab — Suite 402</p>
+<p class="text-on-surface-variant text-body-sm">742 Evergreen Terrace, Seattle WA 98101, United States</p>
+</div>
+</div>
+<a class="font-label-code-xs text-label-code-xs text-primary hover:underline uppercase" href="#">Edit</a>
+</div>
+<div class="py-2.5 flex items-start justify-between gap-space-sm">
+<div class="flex items-start gap-3">
+<span class="text-outline font-label-code-xs text-label-code-xs uppercase w-20 pt-0.5">Method</span>
+<div class="flex items-center gap-2 flex-wrap">
+<span class="text-on-surface font-medium">Worldwide Express Priority</span>
+<span class="px-2 py-0.5 rounded bg-tertiary-container/30 text-tertiary font-label-code-xs text-label-code-xs uppercase">COMPLIMENTARY AIR CARGO</span>
+<span class="text-on-surface-variant font-label-code-xs">(Estimated: 2-3 Business Days)</span>
+</div>
+</div>
+<a class="font-label-code-xs text-label-code-xs text-primary hover:underline uppercase" href="#">Edit</a>
+</div>
+</div>
+</div>
+<!-- PAYMENT METHOD SELECTION FORM -->
+<form class="w-full flex flex-col gap-space-md" id="payment-form" onsubmit="event.preventDefault();">
+<!-- Primary Payment Card Container -->
+<div class="w-full bg-surface-container rounded-xl p-space-lg flex flex-col gap-space-lg shadow-md">
+<div class="flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-primary-container text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-lg">credit_card</span>
+</div>
+<div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface">Payment Protocol</h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant">All transactions encrypted with end-to-end multi-layer tokens</p>
+</div>
+</div>
+<span class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded bg-surface-container-high text-tertiary font-label-code-xs text-label-code-xs">
+<span class="material-symbols-outlined text-sm">security</span>
+                PCI-DSS LEVEL 1 SPECIFIED
+              </span>
+</div>
+<!-- Payment Methods Stack -->
+<div class="flex flex-col gap-space-sm">
+<!-- Option 1: Credit / Debit Card (Selected & Expanded) -->
+<div class="rounded-xl bg-surface-container-high p-space-md flex flex-col gap-space-md shadow-sm transition-all">
+<div class="flex items-center justify-between cursor-pointer">
+<label class="flex items-center gap-3 cursor-pointer select-none">
+<span class="w-5 h-5 rounded-full bg-primary flex items-center justify-center shadow-[0_0_8px_rgba(180,197,255,0.5)]">
+<span class="w-2 h-2 rounded-full bg-on-primary"></span>
+</span>
+<span class="font-headline-md text-headline-md text-on-surface flex items-center gap-2">
+                      Credit / Debit Card
+                    </span>
+</label>
+<!-- Card Badges -->
+<div class="flex items-center gap-1.5 opacity-90">
+<span class="px-1.5 py-0.5 rounded bg-primary/20 border border-primary text-primary font-label-code-xs text-[10px] font-bold tracking-wider transition-all" id="badge-visa">VISA</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-highest text-secondary font-label-code-xs text-[10px] font-bold tracking-wider transition-all" id="badge-mc">MC</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-highest text-primary font-label-code-xs text-[10px] font-bold tracking-wider transition-all" id="badge-amex">AMEX</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-highest text-on-surface font-label-code-xs text-[10px] font-bold tracking-wider transition-all" id="badge-disc">DISC</span>
+</div>
+</div>
+<!-- Expanded Card Inputs Grid -->
+<div class="flex flex-col gap-space-md pt-space-xs">
+<!-- Card Number Field -->
+<div class="flex flex-col gap-2.5">
+<!-- Top Label and Telemetry Status -->
+<div class="flex justify-between items-center">
+<label class="font-label-code-xs text-label-code-xs uppercase text-on-surface-variant flex items-center gap-1.5" for="card-number">
+<span>Card Number</span>
+<span class="text-error">*</span>
+<span class="hidden items-center gap-1 text-tertiary text-[10px] font-semibold bg-tertiary-container/30 px-1.5 py-0.2 rounded border border-tertiary/30 animate-pulse" id="card-cipher-status">
+<span class="material-symbols-outlined text-xs leading-none">verified</span> CIPHER LOCKED
+      </span>
+</label>
+<span class="font-label-code-xs text-label-code-xs text-tertiary flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">vpn_key</span>
+      AES-256 FIELD
+    </span>
+</div>
+<!-- Visual Cybernetic Card Graphic / Floating HUD Chip -->
+<div class="relative w-full rounded-xl bg-gradient-to-tr from-[#0a0e15] via-[#141923] to-[#1c2331] border border-[#2a3142] p-4 overflow-hidden shadow-inner flex flex-col justify-between gap-3 group">
+<!-- Scanline Background Overlay & Ambient Glow -->
+<div class="absolute -right-10 -top-10 w-32 h-32 bg-primary/10 rounded-full blur-2xl pointer-events-none"></div>
+<div class="absolute -left-10 -bottom-10 w-28 h-28 bg-tertiary/10 rounded-full blur-2xl pointer-events-none"></div>
+<!-- HUD Card Header: Chip, Contactless, & Live Network Brand Badge -->
+<div class="flex items-center justify-between relative z-10">
+<div class="flex items-center gap-2">
+<div class="w-7 h-5 rounded bg-secondary-container/40 border border-secondary/40 flex items-center justify-center text-[8px] font-label-code-xs text-secondary font-bold tracking-wider shadow-sm">
+          CHIP
+        </div>
+<span class="material-symbols-outlined text-outline text-base">contactless</span>
+<span class="font-label-code-xs text-[10px] text-tertiary bg-tertiary/10 px-1.5 py-0.5 rounded border border-tertiary/20">HARDWARE VAULT</span>
+</div>
+<div class="px-2.5 py-0.5 rounded bg-primary/20 border border-primary text-primary font-label-code-xs text-xs font-bold tracking-wider transition-all duration-300" id="hud-card-brand-display">
+        VISA
+      </div>
+</div>
+<!-- Live Formatted Masked Card Number Preview -->
+<div class="relative z-10 py-1">
+<div class="font-label-code text-base sm:text-lg font-semibold tracking-[0.2em] text-on-surface flex items-center justify-between gap-1 select-none">
+<span class="transition-all duration-200 text-primary" id="hud-num-seg-0">4719</span>
+<span class="transition-all duration-200 text-on-surface-variant" id="hud-num-seg-1">••••</span>
+<span class="transition-all duration-200 text-on-surface-variant" id="hud-num-seg-2">••••</span>
+<span class="transition-all duration-200 text-on-surface" id="hud-num-seg-3">8820</span>
+</div>
+</div>
+<!-- HUD Card Footer: Cardholder Name & Expiry Synchronization -->
+<div class="flex items-end justify-between relative z-10 text-label-code-xs border-t border-surface-container-highest/40 pt-2">
+<div class="flex flex-col">
+<span class="text-[9px] uppercase tracking-widest text-outline">CARDHOLDER</span>
+<span class="font-label-code text-xs text-on-surface font-semibold tracking-wide uppercase truncate max-w-[200px]" id="hud-card-name">MARCUS VANCE</span>
+</div>
+<div class="flex flex-col items-end">
+<span class="text-[9px] uppercase tracking-widest text-outline">EXPIRES</span>
+<span class="font-label-code text-xs text-on-surface font-semibold tracking-wider" id="hud-card-exp">09/28</span>
+</div>
+</div>
+</div>
+<!-- Input Box with Network Icon & Live Validation Status -->
+<div class="relative flex items-center">
+<input autocomplete="cc-number" class="w-full h-12 bg-surface-container-lowest text-on-surface font-label-code text-body-md rounded-lg px-4 pr-24 focus:outline-none focus:bg-surface-container-lowest shadow-inner tracking-wider border border-transparent focus:border-primary/50 transition-all" id="card-number" maxlength="19" placeholder="0000 0000 0000 0000" type="text" value="4719 •••• •••• 8820"/>
+<div class="absolute right-3 flex items-center gap-2 select-none">
+<span class="px-2 py-0.5 rounded bg-primary/20 text-primary font-label-code-xs text-label-code-xs font-bold transition-all" id="input-brand-badge">VISA</span>
+<span class="material-symbols-outlined text-base text-tertiary transition-transform duration-200" id="input-status-icon">check_circle</span>
+</div>
+</div>
+<!-- 4-Block Security Memory Slot Progress Tracker -->
+<div class="grid grid-cols-4 gap-2 pt-0.5">
+<div class="p-1.5 rounded bg-surface-container-lowest border border-primary/50 flex flex-col items-center justify-center gap-0.5 transition-all duration-300 shadow-[0_0_8px_rgba(180,197,255,0.2)]" id="slot-block-0">
+<div class="flex items-center justify-between w-full px-1 text-[8px] font-label-code-xs text-outline">
+<span>B1</span>
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+</div>
+<span class="font-label-code-xs text-[11px] font-bold text-primary tracking-widest" id="slot-text-0">4719</span>
+</div>
+<div class="p-1.5 rounded bg-surface-container-lowest border border-tertiary/40 flex flex-col items-center justify-center gap-0.5 transition-all duration-300" id="slot-block-1">
+<div class="flex items-center justify-between w-full px-1 text-[8px] font-label-code-xs text-outline">
+<span>B2</span>
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+</div>
+<span class="font-label-code-xs text-[11px] font-bold text-tertiary tracking-widest" id="slot-text-1">••••</span>
+</div>
+<div class="p-1.5 rounded bg-surface-container-lowest border border-tertiary/40 flex flex-col items-center justify-center gap-0.5 transition-all duration-300" id="slot-block-2">
+<div class="flex items-center justify-between w-full px-1 text-[8px] font-label-code-xs text-outline">
+<span>B3</span>
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+</div>
+<span class="font-label-code-xs text-[11px] font-bold text-tertiary tracking-widest" id="slot-text-2">••••</span>
+</div>
+<div class="p-1.5 rounded bg-surface-container-lowest border border-primary/50 flex flex-col items-center justify-center gap-0.5 transition-all duration-300 shadow-[0_0_8px_rgba(180,197,255,0.2)]" id="slot-block-3">
+<div class="flex items-center justify-between w-full px-1 text-[8px] font-label-code-xs text-outline">
+<span>B4</span>
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+</div>
+<span class="font-label-code-xs text-[11px] font-bold text-primary tracking-widest" id="slot-text-3">8820</span>
+</div>
+</div>
+</div>
+<!-- Cardholder Name -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-code-xs text-label-code-xs uppercase text-on-surface-variant flex items-center gap-1" for="card-holder">
+                      Cardholder Full Name
+                      <span class="text-error">*</span>
+</label>
+<div class="relative flex items-center">
+<input class="w-full h-12 bg-surface-container-lowest text-on-surface font-body-md rounded-lg px-4 uppercase focus:outline-none focus:bg-surface-container-lowest shadow-inner" id="card-holder" placeholder="FIRSTNAME LASTNAME" type="text" value="MARCUS VANCE"/>
+<span class="material-symbols-outlined absolute right-3 text-on-surface-variant text-base">badge</span>
+</div>
+</div>
+<!-- Expiration & CVV (2-Col) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-code-xs text-label-code-xs uppercase text-on-surface-variant flex items-center gap-1" for="card-exp">
+                        Expiration Date
+                        <span class="text-error">*</span>
+</label>
+<input class="w-full h-12 bg-surface-container-lowest text-on-surface font-label-code text-body-md rounded-lg px-4 focus:outline-none focus:bg-surface-container-lowest shadow-inner" id="card-exp" maxlength="5" placeholder="MM/YY" type="text" value="09/28"/>
+</div>
+<div class="flex flex-col gap-1.5">
+<div class="flex justify-between items-center">
+<div class="flex items-center gap-1"><label class="font-label-code-xs text-label-code-xs uppercase text-on-surface-variant flex items-center gap-1" for="card-cvv">Security Key (CVV)<span class="text-error">*</span></label></div>
+<div class="relative group inline-block"><button class="font-label-code-xs text-label-code-xs text-outline hover:text-tertiary transition-colors cursor-pointer flex items-center gap-1 px-1.5 py-0.5 rounded bg-surface-container hover:bg-surface-container-highest border border-surface-container-highest/60" id="cvv-info-trigger" onclick="const pop = document.getElementById('cvv-guide-popover'); pop.classList.toggle('hidden');" type="button"><span class="material-symbols-outlined text-xs text-tertiary">help</span><span class="">WHERE TO FIND?</span><span class="w-1.5 h-1.5 rounded-full bg-tertiary animate-pulse"></span></button><div class="hidden group-hover:block absolute right-0 bottom-full mb-2 z-50 w-80 sm:w-96 p-4 rounded-xl bg-[#10141d] border border-[#222734] shadow-[0_12px_36px_rgba(0,0,0,0.8)] backdrop-blur-xl transition-all" id="cvv-guide-popover"><div class="flex items-center justify-between pb-2 mb-3 border-b border-[#222734]"><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-sm text-tertiary">security</span><span class="font-label-code text-xs uppercase text-on-surface font-semibold tracking-wider">SECURITY KEY LOCATOR</span></div><div class="flex items-center gap-2"><span class="font-label-code-xs text-[10px] text-tertiary px-1.5 py-0.2 rounded bg-tertiary/10 border border-tertiary/20">SEC-ZONE</span><button class="text-outline hover:text-on-surface text-sm leading-none p-1 rounded hover:bg-surface-container-highest transition-colors" onclick="document.getElementById('cvv-guide-popover').classList.add('hidden')" type="button">✕</button></div></div><div class="flex rounded-lg bg-surface-container-lowest p-0.5 mb-3 border border-surface-container-highest/40"><button class="flex-1 py-1 px-2 rounded font-label-code-xs text-[11px] text-center bg-surface-container-high text-primary font-semibold transition-all" id="tab-btn-visamc" onclick="document.getElementById('view-visamc').classList.remove('hidden'); document.getElementById('view-amex').classList.add('hidden'); this.classList.add('bg-surface-container-high','text-primary','font-semibold'); this.classList.remove('text-outline'); const a=document.getElementById('tab-btn-amex'); a.classList.remove('bg-surface-container-high','text-primary','font-semibold'); a.classList.add('text-outline');" type="button">Visa / MC (Back: 3 Digits)</button><button class="flex-1 py-1 px-2 rounded font-label-code-xs text-[11px] text-center text-outline hover:text-on-surface transition-all" id="tab-btn-amex" onclick="document.getElementById('view-amex').classList.remove('hidden'); document.getElementById('view-visamc').classList.add('hidden'); this.classList.add('bg-surface-container-high','text-primary','font-semibold'); this.classList.remove('text-outline'); const v=document.getElementById('tab-btn-visamc'); v.classList.remove('bg-surface-container-high','text-primary','font-semibold'); v.classList.add('text-outline');" type="button">Amex (Front: 4 Digits)</button></div><div class="flex flex-col gap-2" id="view-visamc"><div class="relative w-full h-32 rounded-lg bg-gradient-to-tr from-[#141923] to-[#1c2331] border border-[#2a3142] p-3 overflow-hidden shadow-inner flex flex-col justify-between"><div class="w-full h-6 bg-[#080b10] -mx-3 mt-1 opacity-90"></div><div class="flex items-center gap-2 mt-1"><div class="flex-1 h-7 bg-[#232938] rounded flex items-center px-2"><div class="w-full flex justify-between items-center opacity-40 font-label-code-xs text-[9px] tracking-widest text-outline select-none"><span class="">AUTHORIZED</span><span class="">SIGNATURE</span></div></div><div class="relative px-2.5 py-1 bg-tertiary/20 rounded border border-tertiary flex items-center justify-center shadow-[0_0_10px_rgba(78,222,163,0.4)]"><span class="font-label-code text-xs text-tertiary font-bold tracking-widest">839</span><span class="absolute -top-2 -right-1 text-[8px] font-label-code-xs bg-tertiary text-surface-container-lowest px-1 rounded font-bold uppercase leading-tight">CVV</span></div></div><div class="flex justify-between items-center pt-1"><span class="font-label-code-xs text-[9px] text-outline">ALGO // CVC2 ENCRYPTED</span><div class="flex gap-1"><span class="text-[9px] font-label-code-xs px-1 rounded bg-[#232938] text-outline">VISA</span><span class="text-[9px] font-label-code-xs px-1 rounded bg-[#232938] text-secondary">MC</span></div></div></div><p class="font-label-code-xs text-xs text-on-surface-variant leading-relaxed"><strong class="text-on-surface">3-digit CVV</strong> is printed on the white signature strip on the reverse side of Visa, Mastercard, and Discover cards.</p></div><div class="hidden flex flex-col gap-2" id="view-amex"><div class="relative w-full h-32 rounded-lg bg-gradient-to-tr from-[#16212e] to-[#202d3f] border border-[#2a3c53] p-3 overflow-hidden shadow-inner flex flex-col justify-between"><div class="flex justify-between items-start"><div class="w-6 h-5 rounded bg-secondary-container/40 border border-secondary/40 flex items-center justify-center text-[8px] font-label-code-xs text-secondary">CHIP</div><span class="font-label-code-xs text-[10px] text-primary font-bold tracking-wider">AMERICAN EXPRESS</span></div><div class="flex justify-end items-center pr-2"><div class="relative px-2.5 py-0.5 bg-primary/25 rounded border border-primary flex items-center justify-center shadow-[0_0_10px_rgba(180,197,255,0.5)]"><span class="font-label-code text-xs text-primary font-bold tracking-widest">1048</span><span class="absolute -top-2 -right-1 text-[8px] font-label-code-xs bg-primary text-on-primary-fixed px-1 rounded font-bold uppercase leading-tight">CID</span></div></div><div class="flex justify-between items-center"><span class="font-label-code text-[11px] text-outline tracking-wider">•••• •••••• •5002</span><span class="font-label-code-xs text-[9px] text-outline">FRONT 4-DIGITS</span></div></div><p class="font-label-code-xs text-xs text-on-surface-variant leading-relaxed"><strong class="text-on-surface">4-digit CID</strong> is printed on the card face directly above the embossed account number on American Express cards.</p></div></div></div>
+</div>
+<div class="relative flex items-center">
+<input class="w-full h-12 bg-surface-container-lowest text-on-surface font-label-code text-body-md rounded-lg px-4 pr-10 focus:outline-none focus:bg-surface-container-lowest shadow-inner" id="card-cvv" maxlength="4" placeholder="CVC" type="password" value="839"/>
+<span class="material-symbols-outlined absolute right-3 text-on-surface-variant text-base">lock</span>
+</div>
+</div>
+</div>
+<!-- Billing Address Alignment -->
+<div class="mt-space-sm pt-space-md flex flex-col gap-space-sm">
+<span class="font-label-code-xs text-label-code-xs uppercase text-on-surface-variant tracking-wider">Billing Address Synchronization</span>
+<div class="flex flex-col gap-2">
+<label class="flex items-center gap-3 p-3 rounded-lg bg-surface-container cursor-pointer select-none">
+<span class="w-4 h-4 rounded-full bg-primary flex items-center justify-center">
+<span class="w-1.5 h-1.5 rounded-full bg-on-primary"></span>
+</span>
+<div class="flex flex-col">
+<span class="text-on-surface font-body-sm font-medium">Same as shipping address</span>
+<span class="text-outline font-label-code-xs text-label-code-xs">Apex Systems Lab, 742 Evergreen Terrace, Seattle WA 98101</span>
+</div>
+</label>
+<label class="flex items-center gap-3 p-3 rounded-lg bg-surface-container-low hover:bg-surface-container cursor-pointer select-none transition-colors">
+<span class="w-4 h-4 rounded-full bg-surface-container-highest flex items-center justify-center"></span>
+<span class="text-on-surface-variant font-body-sm">Use an alternative billing address</span>
+</label>
+</div>
+</div>
+<!-- Vault Vaulting Checkbox -->
+<label class="flex items-start gap-3 p-space-sm rounded-lg bg-surface-container-lowest/70 cursor-pointer select-none">
+<input checked="" class="mt-1 rounded bg-surface-container-highest text-primary-container focus:ring-0 focus:outline-none accent-primary" type="checkbox"/>
+<div class="flex flex-col">
+<span class="text-on-surface font-body-sm font-medium flex items-center gap-1.5">
+                        Save credentials to Kinesis Sovereign Vault
+                        <span class="px-1.5 py-0.2 rounded bg-tertiary-container/30 text-tertiary font-label-code-xs text-[10px]">ZERO-KNOWLEDGE</span>
+</span>
+<span class="text-outline font-label-code-xs text-label-code-xs">Tokenized execution via hardware enclave. Never stored on plain-text servers.</span>
+</div>
+</label>
+</div>
+</div>
+<!-- Option 2: Web3 Ledger / Crypto (Unselected Tab) -->
+<div class="rounded-xl bg-surface-container-low hover:bg-surface-container-high p-space-md flex items-center justify-between cursor-pointer transition-colors">
+<label class="flex items-center gap-3 cursor-pointer select-none">
+<span class="w-5 h-5 rounded-full bg-surface-container-highest flex items-center justify-center"></span>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md text-on-surface flex items-center gap-2">
+                      Crypto Protocol &amp; Web3 Ledger
+                      <span class="px-2 py-0.5 rounded bg-tertiary-container/40 text-tertiary font-label-code-xs text-label-code-xs uppercase">-1.5% GAS REBATE</span>
+</span>
+<span class="text-outline font-label-code-xs text-label-code-xs">Instant settlement via USDC, BTC, ETH via Coinbase Commerce</span>
+</div>
+</label>
+<div class="hidden sm:flex items-center gap-1.5 text-outline font-label-code-xs text-label-code-xs">
+<span class="px-2 py-1 rounded bg-surface-container-highest text-on-surface-variant">USDC</span>
+<span class="px-2 py-1 rounded bg-surface-container-highest text-on-surface-variant">BTC</span>
+<span class="px-2 py-1 rounded bg-surface-container-highest text-on-surface-variant">ETH</span>
+</div>
+</div>
+<!-- Option 3: Klarna / Flexible Installments (Unselected Tab) -->
+<div class="rounded-xl bg-surface-container-low hover:bg-surface-container-high p-space-md flex items-center justify-between cursor-pointer transition-colors">
+<label class="flex items-center gap-3 cursor-pointer select-none">
+<span class="w-5 h-5 rounded-full bg-surface-container-highest flex items-center justify-center"></span>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md text-on-surface flex items-center gap-2">
+                      Split-Payment Engine (Klarna / Afterpay)
+                    </span>
+<span class="text-on-surface-variant font-label-code-xs text-label-code-xs">4 interest-free installments of <strong class="text-secondary">$87.88</strong> every 2 weeks</span>
+</div>
+</label>
+<span class="px-2.5 py-1 rounded bg-[#FFB3C7]/20 text-[#FFB3C7] font-label-code-xs text-label-code-xs font-bold uppercase">KLARNA</span>
+</div>
+</div>
+</div>
+<!-- Form Navigation Actions -->
+<div class="flex flex-col-reverse sm:flex-row items-center justify-between gap-space-md pt-space-sm">
+<a class="w-full sm:w-auto font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface flex items-center justify-center gap-2 transition-colors py-2" href="code.html">
+<span class="material-symbols-outlined text-sm">arrow_back</span>
+              Return to Storefront
+            </a>
+<button class="w-full sm:w-auto px-space-xl h-14 rounded-lg bg-primary-container hover:bg-[#1d4ed8] text-white font-headline-md text-headline-md font-semibold flex items-center justify-center gap-3 transition-all active:scale-[0.99] shadow-[0_0_24px_rgba(37,99,235,0.4)]" onclick="document.getElementById('three-ds-modal').classList.remove('hidden')" type="button">
+<span class="">Review Order &amp; Authorize</span>
+<span class="font-label-code text-on-primary-container font-bold">($351.54)</span>
+<span class="material-symbols-outlined text-xl">arrow_forward</span>
+</button>
+</div>
+<script>
+(function initLiveCardFormatter() {
+  const numInput = document.getElementById('card-number');
+  const nameInput = document.getElementById('card-holder');
+  const expInput = document.getElementById('card-exp');
+  if (!numInput) return;
+
+  const hudBrand = document.getElementById('hud-card-brand-display');
+  const inputBrand = document.getElementById('input-brand-badge');
+  const statusIcon = document.getElementById('input-status-icon');
+  const cipherStatus = document.getElementById('card-cipher-status');
+  const hudName = document.getElementById('hud-card-name');
+  const hudExp = document.getElementById('hud-card-exp');
+
+  const badgeVisa = document.getElementById('badge-visa');
+  const badgeMc = document.getElementById('badge-mc');
+  const badgeAmex = document.getElementById('badge-amex');
+  const badgeDisc = document.getElementById('badge-disc');
+
+  function detectBrand(cleanDigits) {
+    if (/^3[47]/.test(cleanDigits)) return 'AMEX';
+    if (/^4/.test(cleanDigits)) return 'VISA';
+    if (/^(5[1-5]|2[2-7])/.test(cleanDigits)) return 'MC';
+    if (/^6(?:011|5)/.test(cleanDigits)) return 'DISC';
+    return 'CARD';
+  }
+
+  function updateBadges(brand) {
+    const badges = { 'VISA': badgeVisa, 'MC': badgeMc, 'AMEX': badgeAmex, 'DISC': badgeDisc };
+    Object.keys(badges).forEach(k => {
+      const el = badges[k];
+      if (!el) return;
+      if (k === brand) {
+        el.className = 'px-1.5 py-0.5 rounded bg-primary/20 border border-primary text-primary font-label-code-xs text-[10px] font-bold tracking-wider shadow-[0_0_8px_rgba(180,197,255,0.4)] transition-all scale-105';
+      } else {
+        el.className = 'px-1.5 py-0.5 rounded bg-surface-container-highest text-outline font-label-code-xs text-[10px] font-bold tracking-wider opacity-60 transition-all';
+      }
+    });
+    if (hudBrand) hudBrand.textContent = brand === 'CARD' ? 'GENERIC' : brand;
+    if (inputBrand) inputBrand.textContent = brand;
+  }
+
+  function updateSlots(segments, complete) {
+    for (let i = 0; i < 4; i++) {
+      const slot = document.getElementById('slot-block-' + i);
+      const text = document.getElementById('slot-text-' + i);
+      const hudSeg = document.getElementById('hud-num-seg-' + i);
+      const val = segments[i] || '••••';
+      if (text) text.textContent = val;
+      if (hudSeg) hudSeg.textContent = val;
+
+      if (!slot) continue;
+      const filled = segments[i] && segments[i].length === 4 && !segments[i].includes('•');
+      if (filled) {
+        slot.className = 'p-1.5 rounded bg-surface-container-lowest border border-tertiary flex flex-col items-center justify-center gap-0.5 transition-all duration-300 shadow-[0_0_8px_rgba(78,222,163,0.3)]';
+        if (hudSeg) hudSeg.className = 'transition-all duration-200 text-tertiary font-bold';
+      } else if (segments[i] && segments[i].length > 0) {
+        slot.className = 'p-1.5 rounded bg-surface-container-lowest border border-primary/50 flex flex-col items-center justify-center gap-0.5 transition-all duration-300 shadow-[0_0_8px_rgba(180,197,255,0.2)]';
+        if (hudSeg) hudSeg.className = 'transition-all duration-200 text-primary';
+      } else {
+        slot.className = 'p-1.5 rounded bg-surface-container-lowest border border-surface-container-highest/40 flex flex-col items-center justify-center gap-0.5 transition-all duration-300';
+        if (hudSeg) hudSeg.className = 'transition-all duration-200 text-outline';
+      }
+    }
+  }
+
+  numInput.addEventListener('input', function(e) {
+    let val = this.value;
+    // Detect if user has bullet masks or raw numbers
+    let raw = val.replace(/[^0-9]/g, '');
+    const brand = detectBrand(raw || '4');
+    updateBadges(brand);
+
+    let maxLen = brand === 'AMEX' ? 15 : 16;
+    if (raw.length > maxLen) raw = raw.slice(0, maxLen);
+
+    // Format groups
+    let formatted = '';
+    let segments = [];
+    if (brand === 'AMEX') {
+      const p1 = raw.slice(0, 4);
+      const p2 = raw.slice(4, 10);
+      const p3 = raw.slice(10, 15);
+      formatted = [p1, p2, p3].filter(Boolean).join(' ');
+      segments = [p1, p2, p3, ''];
+    } else {
+      const parts = raw.match(/.{1,4}/g) || [];
+      formatted = parts.join(' ');
+      segments = parts;
+    }
+
+    this.value = formatted;
+    const complete = raw.length === maxLen;
+
+    updateSlots(segments, complete);
+
+    if (statusIcon) {
+      if (complete) {
+        statusIcon.textContent = 'verified';
+        statusIcon.className = 'material-symbols-outlined text-base text-tertiary scale-110 transition-transform';
+      } else {
+        statusIcon.textContent = raw.length > 0 ? 'lock' : 'check_circle';
+        statusIcon.className = 'material-symbols-outlined text-base text-outline transition-transform';
+      }
+    }
+    if (cipherStatus) {
+      if (complete) {
+        cipherStatus.classList.remove('hidden');
+        cipherStatus.classList.add('inline-flex');
+      } else {
+        cipherStatus.classList.add('hidden');
+        cipherStatus.classList.remove('inline-flex');
+      }
+    }
+  });
+
+  if (nameInput && hudName) {
+    nameInput.addEventListener('input', function() {
+      hudName.textContent = this.value.trim() || 'MARCUS VANCE';
+    });
+  }
+  if (expInput && hudExp) {
+    expInput.addEventListener('input', function() {
+      let v = this.value.replace(/[^0-9]/g, '');
+      if (v.length > 2) v = v.slice(0, 2) + '/' + v.slice(2, 4);
+      this.value = v;
+      hudExp.textContent = v || 'MM/YY';
+    });
+  }
+})();
+</script></form>
+<!-- Compliance & Security Assurance Micro-strip -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm pt-space-md font-label-code-xs text-label-code-xs text-outline">
+<div class="flex items-center gap-2 p-2.5 rounded bg-surface-container-lowest">
+<span class="material-symbols-outlined text-base text-tertiary">lock</span>
+<span class="">256-Bit SSL/TLS Encryption</span>
+</div>
+<div class="flex items-center gap-2 p-2.5 rounded bg-surface-container-lowest">
+<span class="material-symbols-outlined text-base text-primary">published_with_changes</span>
+<span class="">30-Day Tactical Field Trial</span>
+</div>
+<div class="flex items-center gap-2 p-2.5 rounded bg-surface-container-lowest">
+<span class="material-symbols-outlined text-base text-secondary">verified_user</span>
+<span class="">Lifetime Hardware Warranty</span>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN: Sticky Manifest & Order Summary (5 cols) -->
+<aside class="lg:col-span-5 sticky top-20 flex flex-col gap-space-md">
+<!-- Main Summary Card -->
+<div class="w-full bg-surface-container-low rounded-xl p-space-lg flex flex-col gap-space-lg shadow-md">
+<!-- Header Bar -->
+<div class="flex items-center justify-between pb-space-sm border-b border-surface-container-highest/60">
+<div class="flex items-center gap-2">
+<h2 class="font-headline-md text-headline-md text-on-surface">Manifest Summary</h2>
+<span class="font-label-code-xs text-label-code-xs px-2 py-0.5 rounded bg-surface-container-highest text-on-surface-variant uppercase">2 UNITS</span>
+</div>
+<span class="font-label-code-xs text-label-code-xs text-tertiary flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">lock</span>
+              AUDITED
+            </span>
+</div>
+<!-- Line Items List -->
+<div class="flex flex-col gap-space-md">
+<!-- Item 1: Storm Shell -->
+<div class="flex items-start gap-space-md">
+<div class="relative w-20 h-24 rounded-lg bg-surface-container-lowest overflow-hidden flex-shrink-0 shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Technical obsidian storm shell jacket laid flat on dark slate textured stone background, waterproof taped seams visible, subtle cobalt zipper pull accent, high luxury product photography, soft cinematic rim lighting, 8k resolution" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoIs9ufWmyodSYR1swIIjRDbuOkgWkoKPYZZHsuYsvF1wqZoNjvoZwGoW-xNssps_3LH-Iy_duKfd-JzmRoe0Akyovklj1pLIGi3K9VP-tTCRVEivzqP6DaaiiuV_mdhB7JFRmzmwh897pq2N7f7DgnW75i1nIgQsaJhrwx62QBu9MA7FVaUanC4ZczUwuNVxwCJVDV_YMAsnqWr36qU8UbPoOessf7Md5zNsbPi67sYsdMdL8CMnp"/>
+<span class="absolute top-1 left-1 w-5 h-5 rounded-full bg-surface-container-high text-on-surface text-[10px] font-label-code font-bold flex items-center justify-center">1</span>
+</div>
+<div class="flex flex-col justify-between flex-1 min-w-0 h-24 py-0.5">
+<div>
+<div class="flex items-start justify-between gap-2">
+<h3 class="font-headline-md text-body-lg font-medium text-on-surface truncate">K-01 Stealth Storm Shell</h3>
+<span class="font-label-code text-body-md font-semibold text-on-surface">$320.00</span>
+</div>
+<p class="font-label-code-xs text-label-code-xs text-outline pt-0.5">SPEC // GORE-TEX PRO 3L • 28,000MM</p>
+</div>
+<div class="flex items-center justify-between text-label-code-xs font-label-code-xs text-on-surface-variant">
+<span class="">SIZE: <strong class="text-on-surface">L</strong> • COLOR: <strong class="text-on-surface">OBSIDIAN</strong></span>
+<span class="text-tertiary">IN STOCK</span>
+</div>
+</div>
+</div>
+<!-- Item 2: Technical Socks 3-Pack -->
+<div class="flex items-start gap-space-md">
+<div class="relative w-20 h-24 rounded-lg bg-surface-container-lowest overflow-hidden flex-shrink-0 shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Three pack of dark charcoal performance merino technical socks bundled with a branded nylon compression strap, technical fabric weave detail, minimal studio lighting, dark tactical aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBa96pmTlm8mQgJKIDIF1KrlaDJSwnYSVUw5nN_2m5WCDG8jHPpYHPLtjpZV65U4Wa5_oS6DyIlnPmuFpjJ0KgMJ5CoqK8na8dDjl-ga1DaKhc_3y9ATODa69EcnpY9d7-x0uwxgR7riD43x2H9VIA8lxRALXgGvvWoRmg7mj5oW8OwGPHB0yGqX7eOOCHbNYNZGDjYm5Hj1AaUJkcAb4bKfaJStAHWLYMDtrieOVWy7GZgdtOSmgv"/>
+<span class="absolute top-1 left-1 w-5 h-5 rounded-full bg-surface-container-high text-on-surface text-[10px] font-label-code font-bold flex items-center justify-center">1</span>
+</div>
+<div class="flex flex-col justify-between flex-1 min-w-0 h-24 py-0.5">
+<div>
+<div class="flex items-start justify-between gap-2">
+<h3 class="font-headline-md text-body-lg font-medium text-on-surface truncate">Tech Utility Socks (3-Pack)</h3>
+<span class="font-label-code text-body-md font-semibold text-on-surface">$24.00</span>
+</div>
+<p class="font-label-code-xs text-label-code-xs text-outline pt-0.5">SPEC // MERINO-CORDURA REINFORCED</p>
+</div>
+<div class="flex items-center justify-between text-label-code-xs font-label-code-xs text-on-surface-variant">
+<span class="">SIZE: <strong class="text-on-surface">ONE SIZE</strong> • CHARCOAL</span>
+<span class="text-tertiary">IN STOCK</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Applied Voucher Tag -->
+<div class="p-space-sm rounded-lg bg-surface-container flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-base">local_offer</span>
+<div class="flex flex-col">
+<span class="font-label-code text-body-sm font-semibold text-secondary">WINTER20 APPLIED</span>
+<span class="font-label-code-xs text-label-code-xs text-on-surface-variant">Kinesis Tactical Deployment Initiative</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-code text-body-sm font-semibold text-secondary">-$20.00</span>
+<button class="w-6 h-6 rounded flex items-center justify-center hover:bg-surface-container-highest text-outline hover:text-on-surface transition-colors" title="Remove Voucher" type="button">
+<span class="material-symbols-outlined text-sm">close</span>
+</button>
+</div>
+</div>
+<!-- Cost Calculations Matrix -->
+<div class="flex flex-col gap-2 pt-space-xs font-body-sm text-body-sm border-t border-surface-container-highest/60">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="">Item Subtotal</span>
+<span class="font-label-code text-on-surface">$344.00</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="flex items-center gap-1.5">
+                Worldwide Express Air
+                <span class="px-1.5 py-0.2 rounded bg-tertiary-container/30 text-tertiary font-label-code-xs text-[10px]">TIER 1</span>
+</span>
+<span class="font-label-code text-tertiary font-medium">FREE</span>
+</div>
+<div class="flex items-center justify-between text-secondary">
+<span class="">Voucher Offset (WINTER20)</span>
+<span class="font-label-code">-$20.00</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="flex items-center gap-1">
+                Estimated Taxes (WA State 8.5%)
+                <span class="material-symbols-outlined text-xs text-outline cursor-help" title="Calculated by state and federal tax standards">info</span>
+</span>
+<span class="font-label-code text-on-surface">$27.54</span>
+</div>
+</div>
+<!-- Total Execution Amount -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest flex flex-col gap-1 shadow-inner">
+<div class="flex items-baseline justify-between">
+<span class="font-headline-md text-headline-md text-on-surface font-semibold">Total Due</span>
+<div class="flex items-baseline gap-1.5">
+<span class="font-label-code-xs text-label-code-xs text-outline">USD</span>
+<span class="font-headline-xl text-headline-xl font-bold text-primary tracking-tight">$351.54</span>
+</div>
+</div>
+<div class="flex items-center justify-between font-label-code-xs text-label-code-xs text-outline pt-1 border-t border-surface-container-highest/40">
+<span class="">SETTLEMENT PROTOCOL: IMMEDIATE</span>
+<span class="">INCLUDES $27.54 IN SALES TAX</span>
+</div>
+</div>
+<!-- Carbon Offset Ecological Guarantee -->
+<div class="flex items-center gap-3 p-3 rounded-lg bg-surface-container/60 text-label-code-xs font-label-code-xs text-on-surface-variant">
+<div class="w-6 h-6 rounded-full bg-tertiary/10 text-tertiary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-sm">eco</span>
+</div>
+<span class="">This shipment is <strong>100% carbon-neutral</strong> via direct atmospheric air capture offsets (0.00 KG NET).</span>
+</div>
+</div>
+<!-- Technical Telemetry Spec Panel -->
+<div class="w-full bg-surface-container-lowest rounded-xl p-space-md font-label-code-xs text-label-code-xs text-outline flex flex-col gap-2 shadow-sm">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="">INSPECTION PROTOCOL</span>
+<span class="text-tertiary">PASSED / LEVEL 4</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="">DISPATCH HUB</span>
+<span class="text-on-surface">KINESIS LOGISTICS NORTHWEST (SEA-09)</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="">SIGNATURE REQUIRED</span>
+<span class="text-on-surface">YES (DIRECT HARDWARE CONCIERGE)</span>
+</div>
+</div>
+</aside>
+</div>
+</section>
+</div></main><footer class="w-full bg-surface-container-lowest"><div class="w-full px-margin-desktop py-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-md text-label-code-xs font-label-code-xs text-outline"><span class="">© 2025 KINESIS CORP. HIGH-ASSURANCE CHECKOUT PROTOCOL.</span><div class="flex items-center gap-space-md"><a class="hover:text-on-surface transition-colors" data-path="privacy-policy" href="#">PRIVACY</a><a class="hover:text-on-surface transition-colors" data-path="terms-of-service" href="#">TERMS</a><a class="hover:text-on-surface transition-colors" data-path="support" href="#">SECURITY SPEC</a></div></div></footer>
+<div class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-[#0a0e15]/80 backdrop-blur-xl transition-all duration-300 hidden" id="three-ds-modal">
+<!-- Ambient background glow behind modal -->
+<div class="absolute w-[500px] h-[500px] bg-primary-container/10 rounded-full blur-2xl pointer-events-none -top-10"></div>
+<!-- Obsidian Utility 3DS Card Container -->
+<div class="relative w-full max-w-lg rounded-xl bg-[#0d1117] border border-[#232938] shadow-[0_12px_36px_rgba(0,0,0,0.8)] overflow-hidden font-label-code text-on-surface z-10 flex flex-col">
+<!-- Top Cobalt Glowing Accent Line -->
+<div class="h-1 w-full bg-gradient-to-r from-transparent via-primary-container to-transparent shadow-[0_0_12px_rgba(37,99,235,0.45)]"></div>
+<!-- Modal Header & Issuing Network Telemetry -->
+<div class="p-space-md pb-space-sm border-b border-[#232938] bg-surface-container-lowest/70 flex flex-col gap-2.5">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-primary/20 border border-primary text-primary font-bold text-label-code-xs tracking-wider">VISA Secure</span>
+<span class="text-outline text-label-code-xs">/</span>
+<span class="text-outline font-label-code-xs text-[11px] uppercase tracking-wide">Apex Federal Reserve Node</span>
+</div>
+<button class="w-7 h-7 rounded-lg bg-surface-container hover:bg-surface-container-highest text-outline hover:text-on-surface flex items-center justify-center transition-colors text-base" onclick="document.getElementById('three-ds-modal').classList.add('hidden')" type="button">
+          ✕
+        </button>
+</div>
+<div class="flex items-center justify-between font-label-code-xs text-[10px]">
+<div class="flex items-center gap-1.5 text-tertiary bg-tertiary-container/30 border border-tertiary/30 px-2 py-0.5 rounded">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary animate-pulse"></span>
+<span>EMV 3DS 2.2 PROTOCOL ACTIVE</span>
+</div>
+<span class="text-outline">REF: <span class="text-on-surface-variant font-medium">3DS-TX-994182-A</span></span>
+</div>
+</div>
+<!-- Modal Body Content -->
+<div class="p-space-md flex flex-col gap-space-md">
+<!-- Transaction Context Dossier Box -->
+<div class="rounded-lg bg-[#141923] border border-[#2a3142] p-space-sm flex flex-col gap-1.5 font-label-code-xs text-xs">
+<div class="flex justify-between items-center text-outline">
+<span>MERCHANT</span>
+<span class="text-on-surface font-medium">Kinesis Tactical Logistics Inc.</span>
+</div>
+<div class="flex justify-between items-center text-outline">
+<span>CARD CREDENTIAL</span>
+<span class="text-primary font-medium tracking-wider">Visa ending in •••• 8820</span>
+</div>
+<div class="flex justify-between items-center text-outline">
+<span>AUTHORIZED CHARGE</span>
+<span class="text-on-surface font-headline-md font-bold text-sm text-primary">$351.54 USD</span>
+</div>
+</div>
+<!-- OTP Instructions and Secure Mobile Indicator -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center gap-1.5 text-on-surface text-body-sm font-medium">
+<span class="material-symbols-outlined text-sm text-primary">sms</span>
+<span>One-Time Authorization Passcode</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          A 6-digit one-time cryptographic code was dispatched via encrypted SMS to your registered mobile terminal <strong class="text-on-surface font-label-code text-xs">(+1 ••• ••• 0194)</strong>.
+        </p>
+</div>
+<!-- Interactive 6-Digit Tactical OTP Slots -->
+<div class="flex flex-col gap-2">
+<div class="grid grid-cols-6 gap-2" id="otp-container">
+<input autofocus="" class="otp-input w-full h-12 text-center font-label-code text-lg font-bold rounded-lg bg-surface-container-lowest border border-primary text-primary focus:border-primary focus:ring-0 focus:outline-none shadow-[0_0_8px_rgba(180,197,255,0.4)] transition-all" inputmode="numeric" maxlength="1" type="text" value="8"/>
+<input class="otp-input w-full h-12 text-center font-label-code text-lg font-bold rounded-lg bg-surface-container-lowest border border-primary/50 text-on-surface focus:border-primary focus:ring-0 focus:outline-none transition-all" inputmode="numeric" maxlength="1" type="text" value="4"/>
+<input class="otp-input w-full h-12 text-center font-label-code text-lg font-bold rounded-lg bg-surface-container-lowest border border-primary/50 text-on-surface focus:border-primary focus:ring-0 focus:outline-none transition-all" inputmode="numeric" maxlength="1" type="text" value="2"/>
+<input class="otp-input w-full h-12 text-center font-label-code text-lg font-bold rounded-lg bg-surface-container-lowest border border-surface-container-highest/60 text-on-surface focus:border-primary focus:ring-0 focus:outline-none transition-all" inputmode="numeric" maxlength="1" type="text" value="9"/>
+<input class="otp-input w-full h-12 text-center font-label-code text-lg font-bold rounded-lg bg-surface-container-lowest border border-surface-container-highest/60 text-on-surface focus:border-primary focus:ring-0 focus:outline-none transition-all" inputmode="numeric" maxlength="1" type="text" value="1"/>
+<input class="otp-input w-full h-12 text-center font-label-code text-lg font-bold rounded-lg bg-surface-container-lowest border border-surface-container-highest/60 text-on-surface focus:border-primary focus:ring-0 focus:outline-none transition-all" inputmode="numeric" maxlength="1" placeholder="•" type="text"/>
+</div>
+<!-- Countdown Timer & Resend Option -->
+<div class="flex items-center justify-between font-label-code-xs text-[11px] pt-1 text-outline">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-xs text-secondary">schedule</span>
+<span>Expires in: <strong class="text-secondary font-bold" id="otp-timer">04:42</strong></span>
+</div>
+<button class="text-primary hover:underline uppercase tracking-wider font-semibold" id="btn-resend-otp" onclick="this.textContent='DISPATCHED'; this.classList.add('text-tertiary'); setTimeout(()=&gt;{this.textContent='RESEND OTP'; this.classList.remove('text-tertiary')}, 4000);" type="button">
+            Resend OTP Code
+          </button>
+</div>
+</div>
+<!-- Alternative Hardware FIDO2 / Passkey Fallback -->
+<div class="p-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors cursor-pointer border border-surface-container-highest/40 flex items-center justify-between select-none">
+<div class="flex items-center gap-2 text-label-code-xs text-[11px]">
+<span class="material-symbols-outlined text-base text-tertiary">fingerprint</span>
+<span class="text-on-surface-variant">Or verify with <span class="text-on-surface font-semibold">Passkey / FIDO2 Hardware Key</span></span>
+</div>
+<span class="material-symbols-outlined text-sm text-outline">chevron_right</span>
+</div>
+</div>
+<!-- Modal Footer Actions -->
+<div class="p-space-md border-t border-[#232938] bg-surface-container-lowest/80 flex flex-col sm:flex-row items-center justify-between gap-space-sm">
+<button class="w-full sm:w-auto px-4 py-2.5 rounded-lg border border-[#232938] bg-surface-container hover:bg-surface-container-highest text-outline hover:text-on-surface font-label-code-xs text-xs font-semibold uppercase tracking-wider transition-colors" onclick="document.getElementById('three-ds-modal').classList.add('hidden')" type="button">
+        Cancel &amp; Return
+      </button>
+<button class="w-full sm:w-auto px-5 py-2.5 rounded-lg bg-primary-container hover:bg-[#1d4ed8] text-white font-label-code text-xs font-bold uppercase tracking-wider flex items-center justify-center gap-2 shadow-[0_0_12px_rgba(37,99,235,0.45)] transition-all active:scale-[0.99]" onclick="const btn=this; btn.innerHTML='&lt;span class=\'material-symbols-outlined text-sm animate-spin\'&gt;sync&lt;/span&gt; AUTHORIZING...'; setTimeout(()=&gt;{ window.location.href='Project.html'; }, 1000);" type="button">
+<span class="material-symbols-outlined text-sm">verified_user</span>
+<span>Confirm Authorization ($351.54)</span>
+</button>
+</div>
+</div>
+</div>
+<script>
+(function setupOtpListeners() {
+  const inputs = document.querySelectorAll('#otp-container .otp-input');
+  inputs.forEach((input, index) => {
+    input.addEventListener('input', (e) => {
+      const val = e.target.value;
+      if (val.length === 1 && index < inputs.length - 1) {
+        inputs[index + 1].focus();
+      }
+    });
+    input.addEventListener('keydown', (e) => {
+      if (e.key === 'Backspace' && !e.target.value && index > 0) {
+        inputs[index - 1].focus();
+      }
+    });
+  });
+})();
+</script></body></html>
